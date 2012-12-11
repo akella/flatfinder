@@ -1,2 +1,9 @@
-.lteie8 body {
-  background: red; }
+* + html .choose-city a,
+* + html .enter i,
+* + html .enter span,
+* + html .select-city strong,
+* + html .btn,
+* + html .btn-orange,
+* + html .metro-st i
+* + html .tab i {
+  display: inline; }

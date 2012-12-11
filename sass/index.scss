@@ -1,1 +1,136 @@
 @import "base";
+
+.scroll-wrap {
+    position: relative;
+    height: 420px;
+}
+.scroll {
+    div {
+        width: 100%;
+        height: 420px;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+    }
+}
+.promo-wrap {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    z-index: 1000;
+    margin-left: -341px;
+    width: 682px;
+    overflow: hidden;
+    .promo {
+        float: left;
+        margin-left: 98px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+.promo {
+    padding-bottom: 13px;
+    width: 290px;
+    border: 1px solid rgba(255,255,255,.79);
+    text-align: center;
+    @include border-radius(4px);
+    background: #fefefe; 
+    @include background-image(linear-gradient(#fefefe, #dfdfdf));
+}
+.promo__title {
+    padding: 18px 0 15px;
+    color: #333;
+    font-size: 24px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.promo__text {
+    padding: 16px 25px 23px;
+    color: #4b4b4b;
+    font-size: 18px;
+    line-height: 24px;
+    border-top: 1px solid #fff;
+}
+.promo__more {
+    margin-top: 14px;
+    a {
+        &:before {
+            content: "";
+            position: relative;
+            left: -7px;
+            display: inline-block;
+            @include sized-sprite($icons, inf);
+            opacity: 0.1;
+        }
+    }
+}
+.main {
+    margin: 0 auto;
+    width: 1130px;
+    overflow: hidden;
+}
+.offers-title {
+    height: 0;
+    margin: 64px 0 44px;
+    border-bottom: 1px solid #d0dadb;
+    color: #000;
+    font-size: 40px;
+    line-height: 47px;
+    @include pts_r;
+    text-align: center;
+    strong {
+        position: relative;
+        top: -27px;
+        padding: 0 27px;
+        font-weight: normal;
+        background: #fff;
+    }
+}
+.offers-wrap {
+    overflow: hidden;
+    margin: 0 -100px 16px 0;
+    .offer {
+        float: left;
+        margin-right: 16px;
+    }
+}
+.offer {
+    padding: 4px 4px 12px;
+    overflow: hidden;
+    width: 260px;
+    border: 1px solid #ddd;
+    @include border-radius(4px);
+    .metro-st {
+        float: left;
+        margin-top: 6px;
+    }
+    .price {
+        float: left;
+        margin: 10px 0 0 15px;
+    }
+}
+.offer__img {
+    img {
+        display: block;
+    }
+}
+
+.advant-title {
+    height: 80px;
+    font-size: 40px;
+    @include pts_r;
+    @include background-image(linear-gradient(#fff 0%, #fdfefe 50%, #eaf0f2 100%));
+    div {
+        margin: 0 auto;
+        width: 657px;
+        line-height: 80px;
+        strong {
+            color: #000;
+            font-weight: normal;
+            vertical-align: middle;
+        }
+        .tab {
+            position: relative;
+            top: 10px;
+        }
+    }
+}

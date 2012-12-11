@@ -1,97 +1,82 @@
-/* BACKGROUND SIZE */
-/* ROTATE*/
-/* TRANSITION */
-/* ------------------------------------- Reset css -------------------------------------------- */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
-h6, p, blockquote, pre, a, abbr, acronym, address, big,
-cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
-strike, strong, sub, sup, tt, var, b, u, i, dl, dt,
-dd, ol, ul, li, fieldset, form, label, legend, table, caption,
-tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
-embed, figure, figcaption, footer, header, hgroup, menu, nav,
-output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline; }
+/*
+Syntax error: Undefined variable: "$link".
+        on line 107 of D:/Projects/flatfinder/sass/common.scss
 
-body, html {
-  height: 100%; }
-
-img, fieldset {
-  border: none; }
-
-input[type="submit"] {
-  cursor: pointer; }
-
-textarea {
-  overflow: auto;
-  display: block; }
-
-input {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-input, textarea, select,
-h1, h2, h3, h4, h5, h6, a, span, a:focus {
-  outline: none; }
-
-ul, ol {
-  list-style-type: none; }
-
-table {
-  border-spacing: 0;
-  border-collapse: collapse; }
-
-input[type='submit']::-moz-focus-inner {
-  padding: 0;
-  border: 0; }
-
-* {
-  -webkit-text-size-adjust: none; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header,
-hgroup, menu, nav, section {
-  display: block; }
-
-/* ------------------------------------- //END Reset css --------------------------------------- */
-body {
-  font: normal 12px 'helveticaneuecyrroman', Arial, sans-serif; }
-
-a {
-  color: #2d8db4; }
-
-.l-wrapper {
-  max-width: 1260px;
-  padding: 0 10px;
-  margin: 0 auto -525px;
-  position: relative;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%; }
-
-.push {
-  clear: both;
-  height: 525px; }
-
-.wrapper {
-  overflow: hidden; }
-
-.wrap:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden; }
-
-.whatever {
-  background: url('../img/icons-s95b22fd45d.png') 0 -164px no-repeat;
-  width: 72px;
-  height: 72px; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-    .whatever {
-      background: url('../img/icons-s95b22fd45d.png') 0 0 no-repeat;
-      width: 72px;
-      height: 72px; } }
+Backtrace:
+D:/Projects/flatfinder/sass/common.scss:107
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/script/variable.rb:49:in `_perform'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/script/node.rb:40:in `perform'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:296:in `visit_prop'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:318:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/tree/root_node.rb:20:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/engine.rb:315:in `_render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.2.2/lib/sass/../sass/engine.rb:262:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:140:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:139:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/logger.rb:45:in `red'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:138:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:103:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:100:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/watch_project.rb:147:in `recompile'
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `to_proc'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/watch_project.rb:87:in `perform'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/bin/compass:29
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/bin/compass:43:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-0.13.alpha.0/bin/compass:43
+C:/Ruby187/bin/compass:23:in `load'
+C:/Ruby187/bin/compass:23
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$link\".\A         on line 107 of D:/Projects/flatfinder/sass/common.scss"; }

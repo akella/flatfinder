@@ -1,5 +1,5 @@
 @import "compass/css3";
-
+$experimental-support-for-svg: true;
 // sprites
 $icons: sprite-map("icons/*.png", $spacing: 10px);
 
@@ -77,4 +77,21 @@ $break-large: 1180px;
 @mixin sized-sprite($map, $sprite){
   background: sprite($map, $sprite) no-repeat;
   @include image-size(sprite-file($map, $sprite));
+}
+
+@mixin pts_r{
+    font-weight: normal;
+    font-family: 'pt_sansregular', sans-serif;
+}
+@mixin pts_i{
+    font-weight: normal;
+    font-family: 'pt_sansitalic', sans-serif;
+}
+@mixin pts_b{
+    font-weight: normal;
+    font-family: 'pt_sansbold', sans-serif;
+}
+@mixin pts_bi{
+    font-weight: normal;
+    font-family: 'pt_sansbold_italic', sans-serif;
 }
