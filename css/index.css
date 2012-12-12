@@ -120,7 +120,6 @@
   display: block; }
 
 .advant-title {
-  height: 80px;
   font-size: 40px;
   font-weight: normal;
   font-family: 'pt_sansregular', sans-serif;
@@ -134,12 +133,73 @@
   background-image: linear-gradient(#ffffff 0%, #fdfefe 50%, #eaf0f2 100%); }
   .advant-title div {
     margin: 0 auto;
+    height: 80px;
     width: 657px;
     line-height: 80px; }
     .advant-title div strong {
+      float: left;
       color: #000;
-      font-weight: normal;
-      vertical-align: middle; }
+      font-weight: normal; }
     .advant-title div .tab {
+      float: right;
+      margin-top: 24px; }
+
+.advanteges {
+  margin: 0 auto;
+  width: 1130px;
+  overflow: hidden; }
+
+.advant-wrap {
+  position: relative; }
+
+.advant__title {
+  margin-bottom: 13px;
+  color: #333;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 35px; }
+
+.advant__text {
+  color: #525656;
+  font-size: 18px;
+  line-height: 28px; }
+
+.advant-wrap_1 {
+  padding: 34px 0 0; }
+  .advant-wrap_1 .advant {
+    margin-left: 257px;
+    width: 365px; }
+  .advant-wrap_1 .advant__text {
+    padding-left: 40px; }
+  .advant-wrap_1 .nice-img {
+    position: absolute;
+    top: 25px;
+    right: 62px;
+    z-index: 2; }
+
+.advant-wrap_2 {
+  margin-top: 70px; }
+  .advant-wrap_2 .advant__text {
+    margin-left: 70px;
+    width: 535px; }
+  .advant-wrap_2 .advant__title {
+    position: relative;
+    padding-left: 70px; }
+    .advant-wrap_2 .advant__title span {
       position: relative;
-      top: 10px; }
+      z-index: 2;
+      padding: 0 15px;
+      background: #fff; }
+    .advant-wrap_2 .advant__title:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #d0dadb; }
+  .advant-wrap_2 .nice-img {
+    position: absolute;
+    top: 25px;
+    right: 62px;
+    z-index: 2; }

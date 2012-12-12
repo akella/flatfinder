@@ -115,22 +115,92 @@
 }
 
 .advant-title {
-    height: 80px;
     font-size: 40px;
     @include pts_r;
     @include background-image(linear-gradient(#fff 0%, #fdfefe 50%, #eaf0f2 100%));
     div {
         margin: 0 auto;
+        height: 80px;
         width: 657px;
         line-height: 80px;
         strong {
+            float: left;
             color: #000;
             font-weight: normal;
-            vertical-align: middle;
         }
         .tab {
-            position: relative;
-            top: 10px;
+            float: right;
+            margin-top: 24px;
         }
+    }
+}
+.advanteges {
+    margin: 0 auto;
+    width: 1130px;
+    overflow: hidden;
+}
+.advant-wrap {
+    position: relative;
+}
+
+.advant__title {
+    margin-bottom: 13px;
+    color: #333;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 35px;
+}
+.advant__text {
+    color: #525656;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.advant-wrap_1 {
+    padding: 34px 0 0;
+    .advant {
+        margin-left: 257px;
+        width: 365px;
+    }
+    .advant__text {
+        padding-left: 40px;
+    }
+    .nice-img {
+        position: absolute;
+        top: 25px;
+        right: 62px;
+        z-index: 2;
+    }
+}
+.advant-wrap_2 {
+    margin-top: 70px;
+    .advant__text {
+        margin-left: 70px;
+        width: 535px;
+    }
+    .advant__title {
+        position: relative;
+        padding-left: 70px;
+        span {
+            position: relative;
+            z-index: 2;
+            padding: 0 15px;
+            background: #fff;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #d0dadb;
+        }
+    }
+    .nice-img {
+        position: absolute;
+        top: 25px;
+        right: 62px;
+        z-index: 2;
     }
 }
