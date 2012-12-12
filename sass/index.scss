@@ -3,6 +3,7 @@
 .scroll-wrap {
     position: relative;
     height: 420px;
+    overflow: hidden;
 }
 .scroll {
     div {
@@ -163,15 +164,17 @@
         width: 365px;
     }
     .advant__text {
-        padding-left: 40px;
+        padding: 0 20px 0 40px;
     }
     .nice-img {
         position: absolute;
-        top: 25px;
+        top: -5px;
         right: 62px;
         z-index: 2;
+        border: 30px solid #fff;
     }
 }
+
 .advant-wrap_2 {
     margin-top: 70px;
     .advant__text {
@@ -198,9 +201,72 @@
         }
     }
     .nice-img {
-        position: absolute;
-        top: 25px;
-        right: 62px;
-        z-index: 2;
+        float: left;
+        margin-right: 27px;
+    }
+    .wrap {
+        padding: 20px 0 0 70px;
+    }
+}
+
+.advant-wrap_3 {
+    margin: 88px 0 55px;
+    .advant {
+        margin: 0 0 7px 257px;
+    }
+    .advant__text {
+        width: 290px;
+    }
+    .nice-img {
+        margin-left: 257px;
+    }
+}
+
+.advant-list {
+    position: absolute;
+    top: 44px;
+    left: 700px;
+}
+.advant-balls {
+    position: absolute;
+    top: 195px;
+    left: 600px;
+}
+
+/* Popup enter */
+.popup_enter {
+    margin-left: -338px;
+    width: 667px;
+    overflow: hidden;
+    .label {
+        width: 90px;
+    }
+    .popup__footer {
+        padding: 8px 0 20px 88px;
+    }
+}
+.popup__enter-col {
+    float: left;
+    .or {
+        margin: 19px 0 16px;
+    }
+    .field {
+        margin-left: -62px;
+    }
+}
+.popup__reg-col {
+    float: right;
+    width: 315px;
+    p {
+        color: #737e81;
+        text-align: center;
+        margin-bottom: 31px;
+    }
+    .popup__title {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+    .field {
+        margin: 0 20px 10px -40px;
     }
 }

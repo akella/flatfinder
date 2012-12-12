@@ -3,7 +3,8 @@
 /* TRANSITION */
 .scroll-wrap {
   position: relative;
-  height: 420px; }
+  height: 420px;
+  overflow: hidden; }
 
 .scroll div {
   width: 100%;
@@ -65,7 +66,7 @@
     position: relative;
     left: -7px;
     display: inline-block;
-    background: url('../img/icons-s7b3ad04278.png') 0 -192px no-repeat;
+    background: url('../img/icons-s0dc43adcbe.png') 0 -330px no-repeat;
     width: 12px;
     height: 12px;
     opacity: 0.1; }
@@ -170,12 +171,13 @@
     margin-left: 257px;
     width: 365px; }
   .advant-wrap_1 .advant__text {
-    padding-left: 40px; }
+    padding: 0 20px 0 40px; }
   .advant-wrap_1 .nice-img {
     position: absolute;
-    top: 25px;
+    top: -5px;
     right: 62px;
-    z-index: 2; }
+    z-index: 2;
+    border: 30px solid #fff; }
 
 .advant-wrap_2 {
   margin-top: 70px; }
@@ -199,7 +201,56 @@
       height: 1px;
       background: #d0dadb; }
   .advant-wrap_2 .nice-img {
-    position: absolute;
-    top: 25px;
-    right: 62px;
-    z-index: 2; }
+    float: left;
+    margin-right: 27px; }
+  .advant-wrap_2 .wrap {
+    padding: 20px 0 0 70px; }
+
+.advant-wrap_3 {
+  margin: 88px 0 55px; }
+  .advant-wrap_3 .advant {
+    margin: 0 0 7px 257px; }
+  .advant-wrap_3 .advant__text {
+    width: 290px; }
+  .advant-wrap_3 .nice-img {
+    margin-left: 257px; }
+
+.advant-list {
+  position: absolute;
+  top: 44px;
+  left: 700px; }
+
+.advant-balls {
+  position: absolute;
+  top: 195px;
+  left: 600px; }
+
+/* Popup enter */
+.popup_enter {
+  margin-left: -338px;
+  width: 667px;
+  overflow: hidden; }
+  .popup_enter .label {
+    width: 90px; }
+  .popup_enter .popup__footer {
+    padding: 8px 0 20px 88px; }
+
+.popup__enter-col {
+  float: left; }
+  .popup__enter-col .or {
+    margin: 19px 0 16px; }
+  .popup__enter-col .field {
+    margin-left: -62px; }
+
+.popup__reg-col {
+  float: right;
+  width: 315px; }
+  .popup__reg-col p {
+    color: #737e81;
+    text-align: center;
+    margin-bottom: 31px; }
+  .popup__reg-col .popup__title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee; }
+  .popup__reg-col .field {
+    margin: 0 20px 10px -40px; }
