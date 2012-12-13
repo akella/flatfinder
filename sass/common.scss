@@ -59,7 +59,8 @@ body, html {
 img,fieldset {
 	border:none;
 }
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
 	cursor:pointer;
 }
 textarea {
@@ -97,6 +98,7 @@ hgroup, menu, nav, section {
 }
 /* ------------------------------------- //END Reset css --------------------------------------- */
 body{
+	min-width: 1055px;
 	color: #525656;
 	font: normal 13px/21px Arial, sans-serif;
 }
@@ -147,7 +149,7 @@ a{
 		vertical-align: middle;
 		margin-right: 12px;
 		line-height: 1;
-		color: $link_second; 
+		color: #0d95d9; 
 		font-style: italic;
 		border-bottom: 1px dotted #118ad3;
 		text-decoration: none;
@@ -210,7 +212,7 @@ a{
 	background: #ebf4f5;
 	@include border-radius(5px);
 	span {
-		color: $dark;
+		color: #363b3b;
 		font-size: 12px;
 	}
 	strong {
@@ -277,24 +279,44 @@ a{
 		font-weight: bold;
 	}
 }
-.slogan {
-	margin: 0 auto 25px;
-	width: 1000px;
-	text-align: center;
-	color: #000;
-	font-size: 18px;
-	h1 {
-		padding: 36px 0 16px;
-		@include pts_r;
-		font-size: 40px;
-		line-height: 47px;
-		color: #000;
-	}
-}
 /*---------------------------------------------- END Header -------------------------------------------- */
 
 /*----------------------------------------------  Blocks ----------------------------------------------- */
-
+.l-cols {
+	margin: 0 auto;
+	padding-top: 13px;
+	width: 1055px;
+	overflow: hidden;
+}
+.l-cols_s {width: 1000px;}
+.sidebar {
+	float: left;
+	width: 255px;
+}
+.sidebar-s {
+	float: left;
+	width: 200px;
+}
+.main-col {
+	float: right;
+	width: 790px;
+	@include clr;
+}
+.sidebar-nav {
+	li {
+		margin-bottom: 9px;
+	}
+	a {
+		color: #004bd1;
+		font-size: 16px;
+		border-bottom: 1px dashed;
+		text-decoration: none;
+	}
+	.active {
+		color: #000;
+		border-bottom: 0;
+	}
+}
 .btn {
 	display: inline-block;
 	height: 27px;
@@ -313,7 +335,7 @@ a{
 		@include background-image(linear-gradient(#0045cc, #08c));
 	}
 	&:active {
-		@include box-shadow(inset 0 0 4px 0 rgba(0,0,0,.5));
+		@include box-shadow(inset 0 0 4px 0 rgba(0,0,0,.5), 0 -1px 0 0 #0061b7);
 	}
 }
 
@@ -341,7 +363,28 @@ a{
 		@include box-shadow(inset 0 0 10px  rgba(0,0,0,0.2));
 	}
 }
-
+.btn-gray {
+	display: inline-block;
+	padding: 0 14px;
+	height: 28px;
+	line-height: 28px;
+	color: #595959;
+	font-size: 13px;
+	border: 1px solid #ccc;
+	text-shadow: 0 -1px 1px rgba(225,255,255,0.5);
+	@include border-radius(4px);
+	background: #e7e7e7;
+	@include background-image(linear-gradient(#fff, #e7e7e7));
+	&:hover {
+		background: #e7e7e7;
+		@include background-image(linear-gradient(#e7e7e7, #fff));
+	}
+	&:active {
+		background: #f67f04;
+		@include background-image(linear-gradient(#e7e7e7, #fff));
+		@include box-shadow(inset 0 0 10px  rgba(0,0,0,0.2));
+	}
+}
 .metro-st {
 	color: #333;
 	font-weight: bold;
@@ -414,6 +457,23 @@ a{
 .soc__vk {@include sized-sprite($icons, vk);}
 .soc__tw {@include sized-sprite($icons, tw);}
 .soc__fb {@include sized-sprite($icons, fb);}
+
+.title {
+    font-size: 40px;
+    @include pts_r;
+    @include background-image(linear-gradient(#fff 0%, #fdfefe 50%, #eaf0f2 100%));
+    div {
+        margin: 0 auto;
+        height: 80px;
+        width: 657px;
+        line-height: 80px;
+        strong {
+            float: left;
+            color: #000;
+            font-weight: normal;
+        }
+    }
+}
 
 .tab {
 	display: inline-block;
@@ -558,27 +618,58 @@ a{
 }
 
 /* elements of form */
+.form-title {
+	margin: 10px 45px 30px 0;
+	height: 1px; 
+	color: #ffad00;
+	font-size: 18px;
+	line-height: 21px;
+	background: #ffe2ad;
+	span {
+		position: relative;
+		top: -11px;
+		padding: 0 37px 0 32px;
+		background: #fff;
+	}
+}
+.form-title_mod {
+	margin-top: 27px;
+}
+.fieldset {
+	padding-bottom: 33px;
+}
 .field {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	height: 28px;
 	line-height: 28px;
 	@include clr();
+	clear: both;
+}
+.form-info {
+	float: left;
+	margin-left: 142px;
+	width: 445px;
+	color: #687379;
 }
 .label {
 	float: left;
+	margin: 0 20px 0 -42px;
+	width: 165px;
 	color: #999;
 	text-align: right;
 }
+.label_select {
+	color: #000;
+}
 .input {
-	float: right;
-	margin-left: 20px;
+	float: left;
 	padding: 0 7px;
 	height: 26px;
 	width: 429px;
 	color: #6d6d6d;
 	background: #f5f5f5;
 	border: 1px solid #ddd;
-	@include border-radius(2px);
+	@include border-radius(3px);
 	font: normal 13px/1 Arial, sans-serif;
 	@include box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
 	&:focus {
@@ -587,12 +678,60 @@ a{
 		border: 1px solid #2ecd26;
 		@include box-shadow(none);
 	}
-}
+} 
 .input_s {
 	width: 172px;
 }
 .input_m {
 	width: 207px;
+}
+.input_textarea {
+	resize: vertical;
+	padding-top: 5px; 
+	min-height: 110px;
+}
+.select {
+	position: relative;
+	float: left;
+	margin-right: 9px;
+	width: 220px;
+	height: 28px;
+	span {
+		position: relative;
+		display: block;
+		padding: 0 4px;
+		height: 26px;
+		line-height: 26px;
+		font-size: 12px;
+		color: #555;
+		border: 1px solid #ccc;
+		@include border-radius(2px); 
+	}
+	i {
+		position: absolute;
+		right: 5px;
+		top: 11px;
+		@include sized-sprite($icons, select-bg);
+	}
+	select {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		cursor: pointer;
+	}
+}
+.select_date {
+	width: 37px;
+}
+.select_month {
+	width: 75px;
+}
+.select_year {
+	width: 52px;
 }
 /*---------------------------------------------- END Blocks -------------------------------------------- */
 
