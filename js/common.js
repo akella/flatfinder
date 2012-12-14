@@ -48,4 +48,6 @@ $(document).ready(function(){
         $(".popup-bg").fadeIn();
     });
 
+    // fotorama gallery
+
 });

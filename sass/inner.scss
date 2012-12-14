@@ -10,6 +10,9 @@
     text-align: center;
     color: #8e9eaa;
     font-size: 13px;
+    .btn {
+        margin: 3px 0 13px;
+    }
 }
 .user-main__name {
     margin: -5px 0 3px;
@@ -33,13 +36,14 @@
 }
 
 // user varifications
-.varific {
+.varific-sb {
     margin-top: 40px;
     padding: 15px 0 1px;
     background: #e5eff4;
     @include border-radius(6px);
     @include box-shadow(inset 0 0 10px #e5eff4);
     .separator {
+        background: #e5eff4;
         @include background-image(linear-gradient(left, #e5eff4 0%, #afc0c9 25% ,#afc0c9 75%, #e5eff4 100%)); 
     }
     ul {
@@ -47,7 +51,7 @@
         li {margin-bottom: 14px;}
         * {vertical-align: top;}
         i {margin-top: 3px;}
-        span {
+        span { 
             display: inline-block;
             margin-left: 7px;
             width: 114px;
@@ -55,7 +59,7 @@
         }
     }
 }
-.verific__title {
+.verific-sb__title {
     padding: 0 0 17px 18px;
     font-size: 24px;
     @include pts_r;
@@ -195,5 +199,91 @@
     width: 200px;
     .rate {
         margin-bottom: 32px;
+    }
+}
+
+.auction-sb {
+    margin-bottom: 10px;
+    padding: 3px 0 6px;
+    color: #465157;
+    font-size: 12px;
+    background: #e5eff4;
+    text-align: center;
+    @include border-radius(6px);
+    .separator {
+        margin-top: 11px;
+        background: #afc0c9;
+        @include background-image(linear-gradient(left, #e5eff4 0%, #afc0c9 25% ,#afc0c9 75%, #e5eff4 100%)); 
+    }
+    .btn-arrow {
+        margin: 15px auto 17px;
+    }
+}
+.auction-sb__title {
+    text-transform: uppercase;
+}
+.auction-sb__memb {
+    display: block;
+    margin-top: 2px;
+    padding-left: 32px;
+    text-align: left;
+}
+.sidebar-s {
+    .btn-gray_favor {
+        margin-bottom: 38px;
+        margin-left: 8px;
+    }
+}
+.offer-sb-wrap {
+    margin-top: 17px;
+    padding: 10px 0 5px;
+}
+.offer-sb-wrap_mod {
+    background: #fbd580;
+    padding: 10px 13px 5px;
+    @include border-radius(6px);
+    .separator {
+        background: #e5eff4;
+        @include background-image(linear-gradient(left, #fbd580 0%, #d2b470 25% ,#d2b470 75%, #fbd580 100%)); 
+    }
+}
+.offer-sb {
+    overflow: hidden;
+    margin: 14px 0 13px;
+}
+.offer-sb__title {
+    display: block;
+    margin-bottom: 11px;
+    font-size: 16px;
+    line-height: 21px;
+}
+.offer-sb__img {
+    float: left;
+    margin-right: 11px;
+}
+.offer-sb__main {
+    float: left;
+    font-size: 12px;
+    strong {
+        display: block;
+        margin-top: -5px;
+    }
+    .price {
+        margin-top: -4px;
+        span {
+            color: #7c6f52;
+        }
+    }
+}
+.tab-simple-cont {
+    margin-bottom: 60px;
+}
+
+.tab-cont {
+    overflow: hidden;
+    margin-top: 15px;
+    .list-opt {
+        float: left;
+        margin: 0 0 10px 23px;
     }
 }
