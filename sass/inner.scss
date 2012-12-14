@@ -131,11 +131,25 @@
 
 .user-comm-title {
     overflow: hidden;
+    margin: 50px 0 20px;
     div {
         float: left;
+        margin: 0 70px 0 205px; 
+    }
+    strong {
+        display: block;
+        margin-bottom: 2px;
+        font-size: 41px;
+        @include pts_r;
+        line-height: 41px;
+    }
+    span {
+        padding-right: 10px;
+        color: #92a1b5;
     }
     .btn {
-        float: right;
+        float: left;
+        margin-top: 10px;
     }
 }
 
@@ -177,5 +191,9 @@
 }  
 .com-info {
     float: left;
+    margin-top: -5px;
     width: 200px;
+    .rate {
+        margin-bottom: 32px;
+    }
 }

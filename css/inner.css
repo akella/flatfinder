@@ -123,11 +123,24 @@
   margin-left: -125px; }
 
 .user-comm-title {
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 50px 0 20px; }
   .user-comm-title div {
-    float: left; }
+    float: left;
+    margin: 0 70px 0 205px; }
+  .user-comm-title strong {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 41px;
+    font-weight: normal;
+    font-family: 'pt_sansregular', sans-serif;
+    line-height: 41px; }
+  .user-comm-title span {
+    padding-right: 10px;
+    color: #92a1b5; }
   .user-comm-title .btn {
-    float: right; }
+    float: left;
+    margin-top: 10px; }
 
 .com {
   overflow: hidden;
@@ -170,4 +183,7 @@
 
 .com-info {
   float: left;
+  margin-top: -5px;
   width: 200px; }
+  .com-info .rate {
+    margin-bottom: 32px; }
