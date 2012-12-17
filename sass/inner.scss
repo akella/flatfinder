@@ -363,7 +363,9 @@
         @include border-radius(2px);
     }
 }
-
+.info_filter {
+    padding-right: 26px; 
+}
 .filter-slider {
     input {
         background: none;
@@ -394,7 +396,7 @@
 .filter_type {
     float: left;
     width: 405px; 
-    margin-right: 15px;
+    margin-right: 12px;
     .filter-slider {
         float: right;
     }
@@ -409,6 +411,19 @@
     @include border-radius(0 6px 6px 6px);
 }
 
+.btn-search {
+    position: relative;
+    float: left;
+    margin-top: 27px;
+    input {
+        padding-left: 25px;
+    }
+    .icon {
+        position: absolute;
+        left: 7px;
+        top: 7px;
+    }
+}
 // jquery ui slider styles 
 .ui-widget-content {
     border: 0;
@@ -429,3 +444,132 @@
     background: #e74b21; 
 }
 
+.inform-list {
+    margin-top: -22px;
+}
+.inform-list__head {
+    overflow: hidden;
+    margin-bottom: 13px;
+    .sort {
+        float: right;
+    }
+}
+.inform-quant {
+    font-size: 21px;
+    float: left;
+    span {
+        color: #fc5e0d;
+        @include pts_r; 
+    }
+    i {
+        margin-right: 2px;
+    } 
+}
+.inform-list__footer {
+    margin-top: 21px;
+    span {
+        float: left;
+        font-size: 18px;
+        padding-top: 7px;
+    }
+    .pagin {
+        float: right;
+    }
+}
+.inform {
+    position: relative;
+    overflow: hidden;
+    margin: 0 -15px 8px 0;
+    padding: 13px 11px 9px;
+    .btn-aqua {
+        display: none;
+    }
+    &:hover {
+        background: #f3f9f1;
+        @include border-radius(6px);
+        .btn-aqua {
+            display: inline-block;
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 27px;
+        height: 1px;
+        background: #edf3f2; 
+    }
+}
+.inform__num {
+    float: left;
+    margin-right: 13px;
+    font-weight: bold;
+}
+.inform__img {
+    float: left;
+    margin-right: 10px;
+}
+.inform__main {
+    float: left;
+    width: 445px;
+    padding-right: 10px;  
+    div {
+        overflow: hidden;
+        img {
+            float: left;
+            margin-right: 10px;
+        }
+    }
+}
+.inform__title {
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: normal;
+    a:hover {
+        color: #f1630d; 
+    }
+}
+.inform__floor {
+    display: block;
+    margin-top: 12px;
+    color: #96aaaa; 
+    i {
+        display: inline-block;
+        margin-right: 3px; 
+        padding: 0 8px; 
+        height: 15px;
+        line-height: 15px; 
+        background: #eef6f6;
+        font-size: 11px;
+        @include border-radius(50%); 
+    }
+}
+.inform__metro {
+    margin-left: 5px;
+    padding-left: 10px;
+    border-left: 1px solid #e6e6e6;
+    a {
+        color: #7a868f ;
+        border-bottom: 1px dashed; 
+        text-decoration: none;
+    } 
+}
+
+.inform__price {
+    float: left;
+    .price {
+        display: inline-block;
+        margin-bottom: 11px;
+        padding: 8px 11px; 
+        background: #ecf1f2; 
+        @include border-radius(6px); 
+        strong {
+            line-height: 15px;
+        }
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+}
