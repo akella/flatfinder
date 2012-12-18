@@ -239,7 +239,7 @@
     margin-top: 70px;
     .advant__text {
         margin-left: 70px;
-        width: 535px;
+        width: 520px;
     }
     .advant__title {
         position: relative;
@@ -306,19 +306,23 @@
         margin-left: 0;
     }
     .popup__footer {
-        padding: 8px 0 20px 88px;
+        height: 55px;
+        padding: 0;
     }
 }
 .popup__enter-col {
+    position: relative;
     float: left;
-    .or {
-        margin: 19px 0 16px;
-    }
-    .field {
-        margin-left: -62px;
-    }
+    .or {margin: 19px 0 16px;}
+    .field {margin-left: -62px;}
+    .btn-enter {
+        position: absolute;
+        bottom: -40px;
+        left: 47px;
+    } 
 }
 .popup__reg-col {
+    position: relative;
     float: right;
     width: 315px;
     p {
@@ -326,11 +330,12 @@
         text-align: center;
         margin-bottom: 31px;
     }
-    .popup__title {
-        padding-bottom: 10px;
-        border-bottom: 1px solid #eee;
-    }
     .field {
         margin: 0 20px 10px -40px;
+    }
+    .btn_reg {
+        position: absolute;
+        bottom: -55px;
+        left: 69px;
     }
 }

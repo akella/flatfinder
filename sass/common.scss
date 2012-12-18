@@ -133,7 +133,7 @@ a{
 /*------------------------------------------------ Header -----------------------------------------------*/
 .header {
 	position: relative;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
 .top-bar {
 	position: absolute;
@@ -178,7 +178,7 @@ a{
 }
 .logo {
 	float: left;
-	margin-top: 23px;
+	margin-top: 22px;
 	width: 200px;
 	height: 47px;
 	background: url(../img/logo.png) 0 0 no-repeat;
@@ -187,7 +187,7 @@ a{
 	float: right;
 }
 .enter-city {
-	margin: 4px 0 16px;
+	margin: 0 0 20px;
 	height: 30px;
 	line-height: 30px;
 }
@@ -213,11 +213,15 @@ a{
 .select-city {
 	position: relative;
 	float: right;
-	padding: 0 3px 0 8px;
+	margin-top: 4px;
+	padding: 0 3px 0 10px;
 	height: 30px;
 	line-height: 30px;
 	background: #ebf4f5;
 	@include border-radius(5px);
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 	span {
 		color: #363b3b;
 		font-size: 12px;
@@ -225,7 +229,7 @@ a{
 	strong {
 		display: inline-block;
 		position: relative;
-		margin-right: 11px;
+		margin-right: 13px;
 		color: #08c;
 		font-size: 13px;
 		font-weight: normal;
@@ -278,7 +282,7 @@ a{
 	clear: both;
 	li {
 		float: left;
-		padding-left: 20px;
+		padding-left: 22px;
 	}
 	.active {
 		color: #000;
@@ -298,11 +302,13 @@ a{
 .l-cols_s {width: 1000px;}
 .sidebar {
 	float: left;
+	padding-top: 4px;
 	width: 255px;
 	margin-left: -55px
 }
 .sidebar-s {
 	float: left;
+	padding-top: 4px;
 	width: 200px;
 }
 .main-col {
@@ -332,6 +338,7 @@ a{
 	line-height: 23px;
 	color: #fff;
 	padding: 0 14px;
+	border: 0;
 	border-top: 1px solid #23a1e1;
 	text-decoration: none;
 	text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
@@ -498,8 +505,8 @@ a{
 .icon_star {@include sized-sprite($icons, star);}
 .icon_star-w {@include sized-sprite($icons, star-w);} 
 .icon_del {@include sized-sprite($icons, delite);}
-.icon_arr-t {@include sized-sprite($icons, arr5);}
 .icon_arr-b {@include sized-sprite($icons, arr6);}
+.icon_arr-t {@include sized-sprite($icons, arr5);}
 .icon_search {@include sized-sprite($icons, glass);}
 .icon_list {@include sized-sprite($icons, list);}
 .icon_arr-r {@include sized-sprite($icons, arr7);}
@@ -620,7 +627,7 @@ a{
 	overflow: hidden;
 	a {
 		display: inline-block;
-		margin-right: 5px;
+		margin-right: 2px;
 		height: 27px;
 	}
 }
@@ -720,7 +727,7 @@ a{
 	span {
 		border-bottom: 1px dashed;
 	}
-	.tab__active {
+	.active {
 		color: #fff;
 		background: #1f96e2;
 		text-shadow: 0 1px 0 #000;
@@ -752,7 +759,8 @@ a{
 	background: #fff;
 	display: inline-block;
 	padding-right: 17px;
-	span {
+	overflow: hidden;
+	li {
 		display: inline-block;
 		margin-left: 17px;
 		font-size: 18px;
@@ -790,7 +798,7 @@ a{
 	}
 	.active {
 		background: #04c; 
-		border-top: 1px solid #04c;
+		border-top: 2px solid #04c;
 		border-bottom: 1px solid #039;
 		@include box-shadow(inset 0 2px 5px rgba(0,0,0,0.26));
 	}
@@ -833,28 +841,27 @@ a{
 	top: 100px;
 	z-index: 3000;
 	background: #fff;
-	@include border-radius(4px);
+	@include border-radius(6px);
 }
 .popup__main {
 	padding: 15px 30px 0;
-	overflow: hidden;
+	@include clr;
 }
 .popup__title {
 	display: block;
 	margin-bottom: 17px;
 	color: #333;
 	font-size: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
 }
 .popup__footer {
 	margin: 3px 0 0;
+	padding: 12px 30px 16px;
 	background: #f5f5f5;
 	border-top: 1px solid #ddd;
-	.btn_enter {
-		margin-right: 14px;
-	}
-	.btn_reg {
-		margin-left: 124px;
-	}
+	clear: both;
+	@include border-radius(0 0 6px 6px);
 }
 
 .or {
@@ -923,7 +930,7 @@ a{
 	color: #999;
 	text-align: right;
 }
-.label_select {
+.label_mod {
 	color: #000;
 }
 .input {
@@ -950,10 +957,18 @@ a{
 .input_m {
 	width: 207px;
 }
-.input_textarea {
+.textarea {
 	resize: vertical;
 	padding-top: 5px; 
 	min-height: 110px;
+}
+.textarea_mod {
+	background: #fff;
+	&:focus {
+		color: #555;
+		border: 1px solid #ddd;
+		@include box-shadow(none);
+	}
 }
 .select {
 	position: relative;
@@ -1046,12 +1061,13 @@ a{
 // infotmation block
 .info {
 	margin-bottom: 35px;
-	padding: 0 44px 19px 38px;
+	padding: 0 44px 14px 38px;
 	border: 1px solid $orange;
 	@include border-radius(4px);  
 }
 .info__wrap {
-	overflow: hidden
+	overflow: hidden;
+	margin-top: 8px;
 }
 .info_obj {
 	padding-right: 12px;
@@ -1191,18 +1207,29 @@ a{
 /*---------------------------------------------- Footer ------------------------------------------------ */
 .footer {
 	position: relative;
-	margin-top: 30px;
+	margin-top: 20px;
 	padding: 20px 0;
 	border-top: 1px solid #d6dbdc;
 	.soc {
 		float: right;
+		margin-top: 6px;
 	}
 }
 .footer-nav {
 	float: left;
-	margin-right: 37px;
+	margin-right: 54px;
 	li {
-		margin-bottom: 2px;
+		margin-bottom: 3px;
 	}
 }
 /*---------------------------------------------- END Footer -------------------------------------------- */
+.test {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -600px;
+	width: 1200px;
+	height: 2000px;
+	opacity: 0.7;
+	background: url(../img/test.png) 0 0 no-repeat;
+}

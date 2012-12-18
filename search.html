@@ -18,7 +18,7 @@
     <script src="js/common.js"></script>
 </head>
 <body>
-    <section class="l-layout">
+    <div class="l-layout">
         <!-- Header -->
         <header class="header">
             <div class="l-container header-wrap">
@@ -37,7 +37,7 @@
                     </div>
                     <nav class="nav">
                         <ul>
-                            <li><a href="#" class="active">Главная</a></li>
+                            <li><a href="#">Главная</a></li>
                             <li><a href="#">О проекте</a></li>
                             <li><a href="#">Команда</a></li>
                             <li><a href="#">Миссия</a></li>
@@ -53,7 +53,7 @@
             <aside class="sidebar">
                <div class="filter-s">
                    <div class="filter-s__item">
-                       <div class="filter-s__title">Регион <i class="icon icon_arr-t"></i></div>
+                        <div class="filter-s__title">Регион <i class="icon"></i></div>
                         <div class="js-extend">
                            <ul>
                                <li>Северо-западный</li>
@@ -65,7 +65,7 @@
                    </div>
                    <span class="separator"></span>
                    <div class="filter-s__item">
-                       <div class="filter-s__title">Метро<i class="icon icon_arr-t"></i></div>
+                        <div class="filter-s__title">Метро<i class="icon"></i></div>
                         <div class="js-extend">
                            <ul>
                                <li><span class="metro-st"><i></i>Текстильщики</span></li>
@@ -90,79 +90,104 @@
                                 <div id="slider-time"></div>
                                 <div>
                                     <label for="filt_time"></label>
-                                    <input type="text" id="filt_time" disabled/>
+                                    <div id="filt_time"></div>
                                 </div>
                             </div>
                         </div>
                    </div>
                    <span class="separator"></span>
                    <div class="filter-s__item">
-                        <div class="filter-s__title">Тип платежа<i class="icon icon_arr-t"></i></div>
-                        <label for="a3" class="checkbox">
-                            <input type="checkbox" id="a3">
-                            <i></i>
-                            С залоговым платежом
-                        </label>
-                        <label for="a4" class="checkbox">
-                            <input type="checkbox" id="a4">
-                            <i></i>
-                            Без залогового платежа
-                        </label>
+                        <div class="filter-s__title">Тип платежа<i class="icon"></i></div>
+                        <div class="js-extend">
+                            <label for="a3" class="checkbox">
+                                <input type="checkbox" id="a3">
+                                <i></i>
+                                С залоговым платежом
+                            </label>
+                            <label for="a4" class="checkbox">
+                                <input type="checkbox" id="a4">
+                                <i></i>
+                                Без залогового платежа
+                            </label>
+                        </div>
                    </div>
                    <span class="separator"></span>
                    <div class="filter-s__item">
-                        <div class="filter-s__title">Срок аренды<i class="icon icon_arr-t"></i></div>
-                        <div class="filter-slider">
-                            <div id="slider-term"></div>
-                            <div>
-                                <label for="filt_term"></label>
-                                <input type="text" id="filt_term" disabled/>
+                        <div class="filter-s__title">Срок аренды<i class="icon"></i></div>
+                        <div class="js-extend">
+                            <div class="filter-slider">
+                                <div id="slider-term"></div>
+                                <div>
+                                    <label for="filt_term"></label>
+                                    <div id="filt_term"></div>
+                                </div>
                             </div>
                         </div>
                    </div>
                    <span class="separator"></span>
                    <div class="filter-s__item">
-                        <div class="filter-s__title">Тип платежа<i class="icon icon_arr-t"></i></div>
-                        <label for="a5" class="checkbox">
-                            <input type="checkbox" id="a5">
-                            <i></i>
-                            Беспроводной интернет 
-                            <sup>816</sup>
-                        </label>
-                        <label for="a6" class="checkbox">
-                            <input type="checkbox" id="a6">
-                            <i></i>
-                            Телевизор
-                            <sup>1002</sup>
-                        </label>
-                        <label for="a7" class="checkbox">
-                            <input type="checkbox" id="a7">
-                            <i></i>
-                            Кухня
-                            <sup>544</sup>
-                        </label>
-                        <span class="more">Показать все</span>
+                        <div class="filter-s__title">Тип платежа<i class="icon"></i></div>
+                        <div class="js-extend">
+                            <label for="a5" class="checkbox">
+                                <input type="checkbox" id="a5">
+                                <i></i>
+                                Беспроводной интернет 
+                                <sup>816</sup>
+                            </label>
+                            <label for="a6" class="checkbox">
+                                <input type="checkbox" id="a6">
+                                <i></i>
+                                Телевизор
+                                <sup>1002</sup>
+                            </label>
+                            <label for="a7" class="checkbox">
+                                <input type="checkbox" id="a7">
+                                <i></i>
+                                Кухня
+                                <sup>544</sup>
+                            </label>
+                            <span class="more">Показать все</span>
+                        </div>
                    </div>
                    <span class="separator"></span>
                    <div class="filter-s__item">
-                        <div class="filter-s__title">Для кого<i class="icon icon_arr-t"></i></div>
-                        <ul class="tab-btn">
-                            <li>Один</li>
-                            <li>Семья</li>
-                            <li class="active">С друзьями</li>
-                        </ul>
-                        <div class="tab-cont">
-                            <div class="input-s">
-                                <label>Кол-во друзей</label>
-                                <input type="text">
+                        <div class="filter-s__title">Для кого<i class="icon"></i></div>
+                        <div class="js-extend">    
+                            <ul class="tab-btn">
+                                <li data-tab=".tab-b-cont1">Один</li>
+                                <li data-tab=".tab-b-cont2">Семья</li>
+                                <li data-tab=".tab-b-cont3">С друзьями</li>
+                            </ul>
+                            <div class="tab-b-cont tab-b-cont1">
+                                <div class="input-s">
+                                    <label>Кол-во друзей</label>
+                                    <input type="text">
+                                </div>
+                                <div class="select">
+                                    <span></span>
+                                    <select>
+                                        <option>Только девушки</option>
+                                        <option>...</option>
+                                    </select>
+                                    <i></i>
+                                </div>
                             </div>
-                            <div class="select">
-                                <span></span>
-                                <select>
-                                    <option>Только девушки</option>
-                                    <option>...</option>
-                                </select>
-                                <i></i>
+                            <div class="tab-b-cont tab-b-cont2">
+                                Some info
+                            </div>
+                            <div class="tab-b-cont tab-b-cont3">
+                                <div class="input-s">
+                                    <label>Кол-во друзей</label>
+                                    <input type="text">
+                                </div>
+                                <div class="select">
+                                    <span></span>
+                                    <select>
+                                        <option>Только девушки</option>
+                                        <option>...</option>
+                                    </select>
+                                    <i></i>
+                                </div>
                             </div>
                         </div>
                    </div>
@@ -181,7 +206,7 @@
                                     <div id="slider-price"></div>
                                     <div>
                                         <label for="filt_price"></label>
-                                        <input type="text" id="filt_price" disabled/>
+                                        <div id="filt_price"></div>
                                     </div>
                                 </div>
                             </div>
@@ -190,14 +215,14 @@
                             <strong>Тип жилья</strong>
                             <div class="filter-wrap">
                                 <ul class="tab">
-                                    <li><span>Квартира</span></li>
-                                    <li class="tab__active"><span>Комната</span></li>
+                                    <li data-tab=".tab-cont1"><span>Квартира</span></li>
+                                    <li data-tab=".tab-cont2"><span>Комната</span></li>
                                 </ul>
                                 <div class="filter-slider">
                                     <div id="slider-type"></div>
                                     <div>
                                         <label for="filt_type"></label>
-                                        <input type="text" id="filt_type" disabled/>
+                                        <div id="filt_type"></div>
                                     </div>
                                 </div>
                             </div>
@@ -235,8 +260,10 @@
                             </div>
                             <div>
                                 <span class="inform__floor"><i>2</i>Двухкомнатная квартира</span>
-                                <span class="metro-st"><i></i>Текстильщики</span>
-                                <span class="inform__metro">5 минут <a href="#">транспортом</a> до метро</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
                             </div>  
                         </div>
                         <div class="inform__price">
@@ -263,8 +290,10 @@
                             </div>
                             <div>
                                 <span class="inform__floor"><i>2</i>Двухкомнатная квартира</span>
-                                <span class="metro-st"><i></i>Текстильщики</span>
-                                <span class="inform__metro">5 минут <a href="#">транспортом</a> до метро</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
                             </div>  
                         </div>
                         <div class="inform__price">
@@ -291,8 +320,10 @@
                             </div>
                             <div>
                                 <span class="inform__floor"><i>2</i>Двухкомнатная квартира</span>
-                                <span class="metro-st"><i></i>Текстильщики</span>
-                                <span class="inform__metro">5 минут <a href="#">транспортом</a> до метро</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
                             </div>  
                         </div>
                         <div class="inform__price">
@@ -319,8 +350,10 @@
                             </div>
                             <div>
                                 <span class="inform__floor"><i>2</i>Двухкомнатная квартира</span>
-                                <span class="metro-st"><i></i>Текстильщики</span>
-                                <span class="inform__metro">5 минут <a href="#">транспортом</a> до метро</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
                             </div>  
                         </div>
                         <div class="inform__price">
@@ -347,8 +380,10 @@
                             </div>
                             <div>
                                 <span class="inform__floor"><i>2</i>Двухкомнатная квартира</span>
-                                <span class="metro-st"><i></i>Текстильщики</span>
-                                <span class="inform__metro">5 минут <a href="#">транспортом</a> до метро</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
                             </div>  
                         </div>
                         <div class="inform__price">
@@ -375,8 +410,10 @@
                             </div>
                             <div>
                                 <span class="inform__floor"><i>2</i>Двухкомнатная квартира</span>
-                                <span class="metro-st"><i></i>Текстильщики</span>
-                                <span class="inform__metro">5 минут <a href="#">транспортом</a> до метро</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
                             </div>  
                         </div>
                         <div class="inform__price">
@@ -403,8 +440,10 @@
                             </div>
                             <div>
                                 <span class="inform__floor"><i>2</i>Двухкомнатная квартира</span>
-                                <span class="metro-st"><i></i>Текстильщики</span>
-                                <span class="inform__metro">5 минут <a href="#">транспортом</a> до метро</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
                             </div>  
                         </div>
                         <div class="inform__price">
@@ -431,8 +470,10 @@
                             </div>
                             <div>
                                 <span class="inform__floor"><i>2</i>Двухкомнатная квартира</span>
-                                <span class="metro-st"><i></i>Текстильщики</span>
-                                <span class="inform__metro">5 минут <a href="#">транспортом</a> до метро</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
                             </div>  
                         </div>
                         <div class="inform__price">
@@ -462,7 +503,7 @@
             <!-- END main column -->
         </div>
         <div class="push"></div>
-    </section>
+    </div>
     <!-- Footer -->
     <footer class="footer l-container">
         <ul class="footer-nav">

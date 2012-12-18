@@ -32,6 +32,7 @@
     span {
         color: #004ccc;
         border-bottom: 1px dashed;
+        cursor: pointer;
     }
 }
 
@@ -275,7 +276,7 @@
         }
     }
 }
-.tab-simple-cont {
+.tab-s-cont {
     margin-bottom: 60px;
 }
 
@@ -288,6 +289,31 @@
     }
 }
 
+.popup_comm {
+    position: fixed;
+    width: 937px;
+    margin-left: -468px;
+    .label {
+        margin-left: 0;
+        width: 80px;
+    }
+    .textarea {
+        width: 456px;
+        min-height: 176px;
+        margin-bottom: 17px;
+    }
+    .rate {
+        float: left;
+        margin-left: 38px;
+    }
+    .checkbox {
+        clear: both;
+    }
+}
+.popup-comm-wrap {
+    overflow: hidden;
+}
+
 // search
 .filter-s {
     padding: 27px 0 24px; 
@@ -295,7 +321,7 @@
     border-right: 2px solid #cfdce3;
     @include border-radius(6px); 
     .separator {
-        margin: 5px 0 14px; 
+        margin: 5px 0 11px; 
         background: #afc0c9;
         @include background-image(linear-gradient(left, #e5eff4 0%, #afc0c9 25% ,#afc0c9 75%, #e5eff4 100%));
     }
@@ -303,13 +329,14 @@
 .filter-s__item {
     padding: 0 11px 0 53px; 
     ul {
-        margin: -8px 10px 0 0;
+        margin: -8px 10px 2px 0;
     }
     li {
-        margin-bottom: -2px;
+        margin-bottom: -1px;
         clear: both;
         .icon {
             float: right;
+            margin-top: 7px;
             cursor: pointer;
         }
     }
@@ -336,7 +363,7 @@
 }
 .filter-s__title {
     overflow: hidden;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     padding-right: 8px;
     font: normal 18px Trebuchet,Arial,sans-serif; 
     cursor: pointer;
@@ -367,11 +394,12 @@
     padding-right: 26px; 
 }
 .filter-slider {
-    input {
-        background: none;
+    div {
         color: #f36611; 
         font-size: 14px;
-        width: 100%; 
+        span {
+            color: #000;
+        }
     }
 }
 .filter {
@@ -388,7 +416,7 @@
 .filter_price {
     float: left;
     width: 205px; 
-    margin-right: 15px;
+    margin-right: 20px;
     .filter-slider {
         float: none;
     }
@@ -396,16 +424,16 @@
 .filter_type {
     float: left;
     width: 405px; 
-    margin-right: 12px;
     .filter-slider {
         float: right;
+        width: 140px;
     }
     .tab {
         float: left;
     }
 }
 .filter-wrap {
-    padding: 12px 10px;
+    padding: 9px 10px 7px;
     background: #f3f9f1;
     overflow: hidden;
     @include border-radius(0 6px 6px 6px);
@@ -413,8 +441,8 @@
 
 .btn-search {
     position: relative;
-    float: left;
-    margin-top: 27px;
+    float: right;
+    margin-top: 23px;
     input {
         padding-left: 25px;
     }
@@ -426,6 +454,7 @@
 }
 // jquery ui slider styles 
 .ui-widget-content {
+    margin-bottom: 2px;
     border: 0;
     border-bottom: 1px solid #d3e1e2;
     background: #d9e7e9; 
@@ -449,17 +478,19 @@
 }
 .inform-list__head {
     overflow: hidden;
-    margin-bottom: 13px;
+    margin-bottom: 22px;
+    padding-left: 18px;
     .sort {
         float: right;
+        margin-top: 5px;
     }
 }
 .inform-quant {
     font-size: 21px;
     float: left;
+    @include pts_r;
     span {
-        color: #fc5e0d;
-        @include pts_r; 
+        color: #fc5e0d; 
     }
     i {
         margin-right: 2px;
@@ -467,10 +498,11 @@
 }
 .inform-list__footer {
     margin-top: 21px;
+    overflow: hidden;
     span {
         float: left;
         font-size: 18px;
-        padding-top: 7px;
+        padding: 10px 0 0 40px;
     }
     .pagin {
         float: right;
@@ -480,7 +512,7 @@
     position: relative;
     overflow: hidden;
     margin: 0 -15px 8px 0;
-    padding: 13px 11px 9px;
+    padding: 13px 3px 5px 14px;
     .btn-aqua {
         display: none;
     }
@@ -512,13 +544,14 @@
 }
 .inform__main {
     float: left;
+    margin-top: -3px;
+    padding-right: 8px;  
     width: 445px;
-    padding-right: 10px;  
     div {
         overflow: hidden;
         img {
             float: left;
-            margin-right: 10px;
+            margin: 7px 10px 0 0;
         }
     }
 }
@@ -533,6 +566,7 @@
 .inform__floor {
     display: block;
     margin-top: 12px;
+    padding-left: 20px;
     color: #96aaaa; 
     i {
         display: inline-block;
@@ -546,9 +580,12 @@
     }
 }
 .inform__metro {
-    margin-left: 5px;
-    padding-left: 10px;
-    border-left: 1px solid #e6e6e6;
+    padding-left: 24px;
+    strong {
+        margin-left: 5px;
+        padding-left: 10px;
+        border-left: 1px solid #e6e6e6;
+    }
     a {
         color: #7a868f ;
         border-bottom: 1px dashed; 
@@ -560,7 +597,7 @@
     float: left;
     .price {
         display: inline-block;
-        margin-bottom: 11px;
+        margin-bottom: 8px;
         padding: 8px 11px; 
         background: #ecf1f2; 
         @include border-radius(6px); 
@@ -573,3 +610,4 @@
         }
     }
 }
+

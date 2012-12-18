@@ -17,7 +17,7 @@
     <script src="js/common.js"></script>
 </head>
 <body>
-    <section class="l-layout">
+    <div class="l-layout">
         <!-- Header -->
         <header class="header">
             <div class="l-container header-wrap">
@@ -148,12 +148,12 @@
                 </div>
                 <div class="tab-border-wrap">
                     <div class="tab-simple">
-                        <span class="active">Фотографии</span>
-                        <span>Просмотр карты</span>
-                        <span>Просмотр панорамы улицы</span>
+                        <li data-tab=".tab-s-cont1">Фотографии</li>
+                        <li data-tab=".tab-s-cont2">Просмотр карты</li>
+                        <li data-tab=".tab-s-cont3">Просмотр панорамы улицы</li>
                     </div>
                 </div>
-                <div class="tab-simple-cont">
+                <div class="tab-s-cont tab-s-cont1">
                     <div class="fotorama">
                         <a href="img/gallery/01.jpg">
                             <img src="img/gallery/thumbs/01.jpg" alt="<b>Железистый базальтовый слой глазами современников</b>
@@ -193,16 +193,31 @@
                         // more options  http://fotoramajs.com/customize/
                     </script> 
                 </div> 
+                <div class="tab-s-cont tab-s-cont2">
+                    Просмотр карты 
+                </div>
+                <div class="tab-s-cont tab-s-cont3">
+                    Просмотр панорамы улицы
+                </div>
                  <div class="tab-border-wrap">
                     <div class="tab-wrap">
                         <ul class="tab">
-                            <li><span>Описание</span></li>
-                            <li class="tab__active"><span>Удобства</span></li>
+                            <li data-tab=".tab-cont1"><span>Описание</span></li>
+                            <li data-tab=".tab-cont2"><span>Удобства</span></li>
                         </ul>
                     </div>
                 </div>
-                <div class="tab-cont"></div>
-                <div class="tab-cont">
+                <div class="tab-cont tab-cont1">
+                    <ul class="list-opt">
+                        <li><i class="icon icon_ok"></i>Можно курить</li>
+                        <li><i class="icon icon_ok"></i>Можно с питомцами</li>
+                        <li><i class="icon icon_ok"></i>Телевизор</li>
+                        <li><i class="icon icon_ok"></i>Кабельное телевидение</li>
+                        <li><i class="icon icon_ok"></i>Интернет</li>
+                        <li><i class="icon icon_ok"></i>Балкон</li>
+                    </ul>
+                </div>
+                <div class="tab-cont tab-cont2">
                     <ul class="list-opt">
                         <li><i class="icon icon_ok"></i>Можно курить</li>
                         <li><i class="icon icon_ok"></i>Можно с питомцами</li>
@@ -240,7 +255,7 @@
         <div class="title title_mod">
             <div>
                 <strong>Отзывы</strong>
-                <a href="#" class="btn js-add-comment">Добавить свой отзыв</a>
+                <button class="btn js-add-comment">Добавить свой отзыв</button>
            </div>
         </div>
         <div class="l-cols l-cols_s">
@@ -262,6 +277,10 @@
                         <div class="com-info">
                             <div class="rate">
                                 <strong>Оценка пользователя:</strong>
+                                <img src="img/rate-act.png" alt="">
+                                <img src="img/rate-act.png" alt="">
+                                <img src="img/rate-act.png" alt="">
+                                <img src="img/rate-act.png" alt="">
                                 <img src="img/rate.png" alt="">
                             </div>
                             <p>Пользователь указал, что фотографии помещений соответствуют действительности.</p>
@@ -281,6 +300,10 @@
                         <div class="com-info">
                             <div class="rate">
                                 <strong>Оценка пользователя:</strong>
+                                <img src="img/rate-act.png" alt="">
+                                <img src="img/rate-act.png" alt="">
+                                <img src="img/rate-act.png" alt="">
+                                <img src="img/rate-act.png" alt="">
                                 <img src="img/rate.png" alt="">
                             </div>
                             <p>Пользователь указал, что фотографии помещений соответствуют действительности.</p>
@@ -300,6 +323,10 @@
                         <div class="com-info">
                             <div class="rate">
                                 <strong>Оценка пользователя:</strong>
+                                <img src="img/rate-act.png" alt="">
+                                <img src="img/rate-act.png" alt="">
+                                <img src="img/rate-act.png" alt="">
+                                <img src="img/rate-act.png" alt="">
                                 <img src="img/rate.png" alt="">
                             </div>
                             <p>Пользователь указал, что фотографии помещений соответствуют действительности.</p>
@@ -309,7 +336,7 @@
              </div>
         </div>
         <div class="push"></div>
-    </section>
+    </div>
     <!-- Footer -->
     <footer class="footer l-container">
         <ul class="footer-nav">
@@ -381,6 +408,32 @@
             <input class="btn btn_enter" type="submit" value="Войти">
             <a href="#">Забыли пароль?</a>
             <input class="btn btn_reg" type="submit" value="Зарегестрироваться">
+        </div>
+    </div>
+    <div class="popup popup_comm">
+        <div class="popup__main">
+            <strong class="popup__title">Добавить отзыв</strong>
+            <div class="field">
+                <label class="label label_mod">Текст отзыва</label>
+                <textarea class="input textarea textarea_mod"></textarea>
+                <div class="rate">
+                    <strong>Оцените объект:</strong>
+                    <img src="img/rate-act.png" alt="">
+                    <img src="img/rate-act.png" alt="">
+                    <img src="img/rate-act.png" alt="">
+                    <img src="img/rate.png" alt="">
+                    <img src="img/rate.png" alt="">
+                </div>
+            </div>
+            <label for="p1" class="checkbox">
+                <input type="checkbox" id="p1">
+                <i></i>
+                Я потверждаю, что фотографии объекта соответствуют действительности
+            </label>
+        </div>
+        <div class="popup__footer">
+            <input class="btn btn_enter" type="submit" value="Добавить отзыв">
+            <input class="btn-gray" type="reset" value="Отменить">
         </div>
     </div>
     <!-- END Enter popup  -->

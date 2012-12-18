@@ -80,7 +80,7 @@
     position: relative;
     left: -7px;
     display: inline-block;
-    background: url('../img/icons-s811b2d4473.png') 0 -378px no-repeat;
+    background: url('../img/icons-s638a1b44ea.png') 0 -614px no-repeat;
     width: 12px;
     height: 12px;
     opacity: 0.1; }
@@ -236,7 +236,7 @@
   margin-top: 70px; }
   .advant-wrap_2 .advant__text {
     margin-left: 70px;
-    width: 535px; }
+    width: 520px; }
   .advant-wrap_2 .advant__title {
     position: relative;
     padding-left: 70px; }
@@ -288,24 +288,32 @@
     width: 90px;
     margin-left: 0; }
   .popup_enter .popup__footer {
-    padding: 8px 0 20px 88px; }
+    height: 55px;
+    padding: 0; }
 
 .popup__enter-col {
+  position: relative;
   float: left; }
   .popup__enter-col .or {
     margin: 19px 0 16px; }
   .popup__enter-col .field {
     margin-left: -62px; }
+  .popup__enter-col .btn-enter {
+    position: absolute;
+    bottom: -40px;
+    left: 47px; }
 
 .popup__reg-col {
+  position: relative;
   float: right;
   width: 315px; }
   .popup__reg-col p {
     color: #737e81;
     text-align: center;
     margin-bottom: 31px; }
-  .popup__reg-col .popup__title {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee; }
   .popup__reg-col .field {
     margin: 0 20px 10px -40px; }
+  .popup__reg-col .btn_reg {
+    position: absolute;
+    bottom: -55px;
+    left: 69px; }
