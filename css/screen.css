@@ -322,8 +322,8 @@ a {
 
 .sidebar-s {
   float: left;
-  padding-top: 4px;
-  width: 200px; }
+  width: 200px;
+  margin-top: -4px; }
 
 .main-col {
   float: right;
@@ -387,6 +387,12 @@ a {
     -webkit-box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.5), 0 -1px 0 0 #0061b7;
     -moz-box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.5), 0 -1px 0 0 #0061b7;
     box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.5), 0 -1px 0 0 #0061b7; }
+
+.btn_big {
+  height: 31px;
+  line-height: 26px;
+  font-size: 18px;
+  padding: 0 11px; }
 
 .btn-orange {
   display: inline-block;
@@ -1428,16 +1434,6 @@ a {
     margin-bottom: 3px; }
 
 /*---------------------------------------------- END Footer -------------------------------------------- */
-.test {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  margin-left: -600px;
-  width: 1200px;
-  height: 2000px;
-  opacity: 0.7;
-  background: url(../img/test.png) 0 0 no-repeat; }
-
 /* BACKGROUND SIZE */
 /* ROTATE*/
 /* TRANSITION */
@@ -1976,14 +1972,16 @@ a {
     background-image: -ms-linear-gradient(left, #e5eff4 0%, #afc0c9 25%, #afc0c9 75%, #e5eff4 100%);
     background-image: linear-gradient(left, #e5eff4 0%, #afc0c9 25%, #afc0c9 75%, #e5eff4 100%); }
   .auction-sb .btn-arrow {
-    margin: 15px auto 17px; }
+    margin: 14px auto 17px; }
 
 .auction-sb__title {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px; }
 
 .auction-sb__memb {
   display: block;
-  margin-top: 2px;
+  margin-top: 5px;
   padding-left: 32px;
   text-align: left; }
 
@@ -1992,12 +1990,14 @@ a {
   margin-left: 8px; }
 
 .offer-sb-wrap {
-  margin-top: 17px;
+  margin: 19px 0 26px;
   padding: 10px 0 5px; }
+  .offer-sb-wrap .separator {
+    margin: 0 0 19px; }
 
 .offer-sb-wrap_mod {
   background: #fbd580;
-  padding: 10px 13px 5px;
+  padding: 14px 13px 5px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -2016,9 +2016,9 @@ a {
 
 .offer-sb {
   overflow: hidden;
-  margin: 14px 0 13px; }
+  margin: 14px 0 3px; }
 
-.offer-sb__title {
+.offer-sb-title {
   display: block;
   margin-bottom: 11px;
   font-size: 16px;

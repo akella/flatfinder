@@ -216,14 +216,16 @@
     background-image: -ms-linear-gradient(left, #e5eff4 0%, #afc0c9 25%, #afc0c9 75%, #e5eff4 100%);
     background-image: linear-gradient(left, #e5eff4 0%, #afc0c9 25%, #afc0c9 75%, #e5eff4 100%); }
   .auction-sb .btn-arrow {
-    margin: 15px auto 17px; }
+    margin: 14px auto 17px; }
 
 .auction-sb__title {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px; }
 
 .auction-sb__memb {
   display: block;
-  margin-top: 2px;
+  margin-top: 5px;
   padding-left: 32px;
   text-align: left; }
 
@@ -232,12 +234,14 @@
   margin-left: 8px; }
 
 .offer-sb-wrap {
-  margin-top: 17px;
+  margin: 19px 0 26px;
   padding: 10px 0 5px; }
+  .offer-sb-wrap .separator {
+    margin: 0 0 19px; }
 
 .offer-sb-wrap_mod {
   background: #fbd580;
-  padding: 10px 13px 5px;
+  padding: 14px 13px 5px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -256,9 +260,9 @@
 
 .offer-sb {
   overflow: hidden;
-  margin: 14px 0 13px; }
+  margin: 14px 0 3px; }
 
-.offer-sb__title {
+.offer-sb-title {
   display: block;
   margin-bottom: 11px;
   font-size: 16px;
