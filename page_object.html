@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Object pager</title>
+	<title>Page object</title>
     <!--[if lt IE 9]> 
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
     <![endif]-->
@@ -50,12 +50,12 @@
         <div class="l-cols l-cols_s">
             <!-- Sidebar -->
             <aside class="sidebar-s">
-                <div class="auction-sb">
-                    <span class="auction-sb__title">АУКЦИОН</span>
+                <div class="propose-sb">
+                    <span class="aucpropose__title">АУКЦИОН</span>
                     <div class="price price_fs38">
                         <strong>21500 <i>p</i></strong>
                     </div>
-                    <span class="auction-sb__memb">Всего участников: 1</span>
+                    <span class="propose-sb__memb">Всего участников: 1</span>
                     <span class="separator"></span>
                     <a href="#" class="btn-arrow">
                         <span>Поднять ставку на 500 рублей</span>
@@ -207,17 +207,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="tab-cont tab-cont1">
-                    <ul class="list-opt">
-                        <li><i class="icon icon_ok"></i>Можно курить</li>
-                        <li><i class="icon icon_ok"></i>Можно с питомцами</li>
-                        <li><i class="icon icon_ok"></i>Телевизор</li>
-                        <li><i class="icon icon_ok"></i>Кабельное телевидение</li>
-                        <li><i class="icon icon_ok"></i>Интернет</li>
-                        <li><i class="icon icon_ok"></i>Балкон</li>
-                    </ul>
+                <div class="tab-cont tab-cont-obj tab-cont1">
+                    <p>В связи с этим нужно подчеркнуть, что громкостнoй прогрессийный период монотонно иллюстрирует комплексный рекламный бриф, опираясь на опыт западных коллег. Потребление, следовательно, гармонично. Таргетирование нетривиально. Еще Траут показал, что психологическая среда подсознательно трансформирует обществвенный формирование имиджа, но если бы песен было раз в пять меньше, было бы лучше для всех. Легато образует звукорядный полиряд, используя опыт предыдущих кампаний.</p>
+                    <p>Стимулирование коммьюнити тормозит креатив, благодаря употреблению микромотивов (нередко из одного звука, а также двух-трех с паузами). Модальное письмо может быть реализовано на основе принципов центропостоянности и центропеременности, таким образом воздействие на потребителя изящно начинает метод изучения рынка, таким образом объектом имитации является число длительностей в каждой из относительно автономных ритмогрупп ведущего голоса.</p>
                 </div>
-                <div class="tab-cont tab-cont2">
+                <div class="tab-cont tab-cont-obj tab-cont2">
                     <ul class="list-opt">
                         <li><i class="icon icon_ok"></i>Можно курить</li>
                         <li><i class="icon icon_ok"></i>Можно с питомцами</li>
@@ -361,51 +355,57 @@
     <div class="popup popup_enter">
         <div class="popup__main">
             <div class="popup__enter-col">
-                <strong class="popup__title">Войти</strong>
-                <a href="#" class="enter-soc ener-soc_vk">
-                    <span>Войти через <strong>Вконтакте</strong></span>
-                </a>
-                <a href="#" class="enter-soc ener-soc_tw">
-                    <span>Войти через <strong>Twitter</strong></span>
-                </a>
-                <a href="#" class="enter-soc ener-soc_fb">
-                    <span>Войти через <strong>Facebook</strong></span>
-                </a>
-                <div class="or"><span>или</span></div>
-                <div class="field">
-                    <label class="label">E-mail</label>
-                    <input class="input input_s" type="text">
-                </div>
-                <div class="field">
-                    <label class="label">Пароль</label>
-                    <input class="input input_s" type="password">
-                </div>
+                <form>
+                    <strong class="popup__title">Войти</strong>
+                    <a href="#" class="enter-soc ener-soc_vk">
+                        <span>Войти через <strong>Вконтакте</strong></span>
+                    </a>
+                    <a href="#" class="enter-soc ener-soc_tw">
+                        <span>Войти через <strong>Twitter</strong></span>
+                    </a>
+                    <a href="#" class="enter-soc ener-soc_fb">
+                        <span>Войти через <strong>Facebook</strong></span>
+                    </a>
+                    <div class="or"><span>или</span></div>
+                    <div class="field">
+                        <label class="label">E-mail</label>
+                        <input class="input input_s" type="text">
+                    </div>
+                    <div class="field">
+                        <label class="label">Пароль</label>
+                        <input class="input input_s" type="password">
+                    </div>
+                    <div class="btn-enter">
+                        <input class="btn" type="submit" value="Войти">
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </form>
             </div>
             <div class="popup__reg-col">
-                <strong class="popup__title">Регистрация</strong>
-                <p>Регистрация на сайте позволит вам получить полный доступ ко всем функциям сайта.</p>
-                <div class="field">
-                    <label class="label">E-mail</label>
-                    <input class="input input_m" type="text">
-                </div>
-                <div class="field">
-                    <label class="label">Имя</label>
-                    <input class="input input_m" type="password">
-                </div>
-                <div class="field">
-                    <label class="label">Фамилия</label>
-                    <input class="input input_m" type="text">
-                </div>
-                <div class="field">
-                    <label class="label">Пароль</label>
-                    <input class="input input_m" type="password">
-                </div>
+                <form>
+                    <strong class="popup__title">Регистрация</strong>
+                    <p>Регистрация на сайте позволит вам получить полный доступ ко всем функциям сайта.</p>
+                    <div class="field">
+                        <label class="label">E-mail</label>
+                        <input class="input input_m" type="text">
+                    </div>
+                    <div class="field">
+                        <label class="label">Имя</label>
+                        <input class="input input_m" type="password">
+                    </div>
+                    <div class="field">
+                        <label class="label">Фамилия</label>
+                        <input class="input input_m" type="text">
+                    </div>
+                    <div class="field">
+                        <label class="label">Пароль</label>
+                        <input class="input input_m" type="password">
+                    </div>
+                    <input class="btn btn_reg" type="submit" value="Зарегестрироваться">
+                </form>
             </div>
         </div>
         <div class="popup__footer">
-            <input class="btn btn_enter" type="submit" value="Войти">
-            <a href="#">Забыли пароль?</a>
-            <input class="btn btn_reg" type="submit" value="Зарегестрироваться">
         </div>
     </div>
     <div class="popup popup_comm">

@@ -192,9 +192,9 @@
   .com-info .rate {
     margin-bottom: 32px; }
 
-.auction-sb {
+.propose-sb {
   margin-bottom: 10px;
-  padding: 3px 0 6px;
+  padding: 10px 0 6px;
   color: #465157;
   font-size: 12px;
   background: #e5eff4;
@@ -204,7 +204,7 @@
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px; }
-  .auction-sb .separator {
+  .propose-sb .separator {
     margin-top: 11px;
     background: #afc0c9;
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iNTAlIiB4Mj0iMTAwJSIgeTI9IjUwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U1ZWZmNCIvPjxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjYWZjMGM5Ii8+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiNhZmMwYzkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWVmZjQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
@@ -215,15 +215,15 @@
     background-image: -o-linear-gradient(left, #e5eff4 0%, #afc0c9 25%, #afc0c9 75%, #e5eff4 100%);
     background-image: -ms-linear-gradient(left, #e5eff4 0%, #afc0c9 25%, #afc0c9 75%, #e5eff4 100%);
     background-image: linear-gradient(left, #e5eff4 0%, #afc0c9 25%, #afc0c9 75%, #e5eff4 100%); }
-  .auction-sb .btn-arrow {
+  .propose-sb .btn-arrow {
     margin: 14px auto 17px; }
 
-.auction-sb__title {
+.propose-sb__title {
   text-transform: uppercase;
   display: block;
   margin-bottom: 4px; }
 
-.auction-sb__memb {
+.propose-sb__memb {
   display: block;
   margin-top: 5px;
   padding-left: 32px;
@@ -288,10 +288,17 @@
 
 .tab-cont {
   overflow: hidden;
-  margin-top: 15px; }
+  padding-top: 15px; }
   .tab-cont .list-opt {
     float: left;
     margin: 0 0 10px 23px; }
+
+.tab-cont-obj {
+  padding-left: 20px; }
+  .tab-cont-obj p {
+    color: #2c3539;
+    line-height: 22px;
+    margin-bottom: 20px; }
 
 .popup_comm {
   position: fixed;
@@ -626,3 +633,102 @@
     .inform__price .price span {
       display: block;
       text-align: center; }
+
+.info {
+  margin-bottom: 35px;
+  padding: 0 44px 14px 38px;
+  border: 1px solid #f8a41f;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
+
+.info__wrap {
+  overflow: hidden;
+  margin-top: 8px; }
+
+.info_obj {
+  padding-right: 12px; }
+  .info_obj .info__title {
+    font-weight: normal;
+    font-family: 'pt_sansbold', sans-serif; }
+  .info_obj .info__item b {
+    display: block;
+    float: none;
+    font-weight: normal;
+    font-family: 'pt_sansbold', sans-serif;
+    font-size: 18px; }
+  .info_obj .info__item p {
+    color: #000; }
+  .info_obj .info__item .metro-st {
+    margin: 0 -15px 0 25px; }
+
+.info__flat {
+  margin-bottom: 18px;
+  color: #262a2a;
+  font-size: 18px;
+  overflow: hidden; }
+  .info__flat div {
+    float: left; }
+  .info__flat span {
+    color: #ed6c0d; }
+  .info__flat .soc-share {
+    float: right; }
+
+.info__item {
+  overflow: hidden; }
+  .info__item b {
+    float: left;
+    margin-right: 4px;
+    font-weight: normal; }
+  .info__item p {
+    overflow: hidden;
+    color: #6d828c; }
+
+.info__item-way {
+  display: inline-block;
+  min-width: 125px; }
+
+.info__title {
+  position: relative;
+  top: -10px;
+  margin-left: -12px;
+  padding: 0 15px 0 12px;
+  background: #fff;
+  color: #000;
+  font-size: 25px;
+  font-weight: normal;
+  font-family: 'pt_sansregular', sans-serif; }
+
+.info__categ {
+  display: block;
+  margin: 22px 0 17px;
+  height: 1px;
+  color: #ecab11;
+  background: #f9e2b2; }
+  .info__categ b {
+    position: relative;
+    top: -10px;
+    display: block;
+    width: 147px;
+    background: #fff; }
+
+.option-table__descr {
+  float: left;
+  width: 500px; }
+
+.option-table {
+  padding-bottom: 53px;
+  width: 230px;
+  float: right;
+  border-left: 1px solid #f4f4f4; }
+  .option-table li {
+    padding: 3px 5px 3px 25px;
+    color: #54656d; }
+    .option-table li:nth-child(2n) {
+      background: #f4f4f4; }
+  .option-table strong {
+    display: block;
+    color: #000;
+    margin-bottom: -2px; }

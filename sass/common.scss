@@ -106,7 +106,7 @@ body{
 	min-width: 1130px;
 }
 a{
-	color: $link;
+	color: #1871c4;
 }
 .l-layout {
     margin: 0 auto -156px;
@@ -169,7 +169,7 @@ a{
 	}
 	.cancel {
 		float: right;
-		color: $red;
+		color: #dc1616;
 		font-style: normal;
 		border-bottom: 0;
 		font-size: 12px;
@@ -186,6 +186,7 @@ a{
 .nav-wrap {
 	float: right;
 }
+
 .enter-city {
 	margin: 0 0 20px;
 	height: 30px;
@@ -210,6 +211,8 @@ a{
 		border-bottom: 1px dashed;
 	}
 }
+
+// select city block
 .select-city {
 	position: relative;
 	float: right;
@@ -276,6 +279,7 @@ a{
 		cursor: pointer;
 	}
 }
+// main menu
 .nav {
 	overflow: hidden;
 	line-height: 26px;
@@ -293,6 +297,7 @@ a{
 /*---------------------------------------------- END Header -------------------------------------------- */
 
 /*----------------------------------------------  Blocks ----------------------------------------------- */
+// layout
 .l-cols {
 	margin: 0 auto;
 	padding-top: 13px;
@@ -300,6 +305,7 @@ a{
 	@include clr;
 }
 .l-cols_s {width: 1000px;}
+// sidebar
 .sidebar {
 	float: left;
 	padding-top: 4px;
@@ -311,11 +317,7 @@ a{
 	width: 200px;
 	margin-top: -4px;
 }
-.main-col {
-	float: right;
-	width: 790px;
-	@include clr;
-}
+// navigation in sidebar
 .sidebar-nav {
 	li {
 		margin-bottom: 9px;
@@ -331,7 +333,14 @@ a{
 		border-bottom: 0;
 	}
 }
-// buttons
+// main column
+.main-col {
+	float: right;
+	width: 790px;
+	@include clr;
+}
+
+// buttons style
 .btn {
 	display: inline-block;
 	height: 27px;
@@ -356,10 +365,11 @@ a{
 }
 .btn_big {
 	height: 31px;
-	line-height: 26px;
+	line-height: 29px;
 	font-size: 18px;
 	padding: 0 11px;
 }
+
 .btn-orange {
 	display: inline-block;
 	padding: 0 14px;
@@ -384,6 +394,7 @@ a{
 		@include box-shadow(inset 0 0 10px  rgba(0,0,0,0.2));
 	}
 }
+
 .btn-gray {
 	display: inline-block;
 	padding: 0 14px;
@@ -423,6 +434,7 @@ a{
 		@include sized-sprite($icons, star);
 	}
 }
+
 .btn-arrow {
 	display: block;
 	margin: 0 auto;
@@ -439,7 +451,12 @@ a{
 		display: inline-block;
 	}
 }
-
+.btn-arrow_bold {
+	@include pts_b;
+	font-size: 21px;
+	text-align: left;
+	line-height: 20px;
+}
 .btn-green {
 	padding: 0 11px; 
 	height: 27px;
@@ -494,6 +511,7 @@ a{
 	}
 }
 
+// separator of sidebar
 .separator {
 	display: block;
 	height: 1px;
@@ -515,6 +533,7 @@ a{
 .icon_search {@include sized-sprite($icons, glass);}
 .icon_list {@include sized-sprite($icons, list);}
 .icon_arr-r {@include sized-sprite($icons, arr7);}
+
 // metro station
 .metro-st {
 	color: #333;
@@ -526,7 +545,7 @@ a{
 	}
 } 
 
-// price
+// price style
 .price {
 	strong {
 		display: block;
@@ -562,6 +581,7 @@ a{
 		font-size: 13px;
 	}
 }
+// price font-size:12px;
 .price_fs12 {
     strong {
         font-size: 12px;
@@ -575,6 +595,7 @@ a{
 	    }
     }
 }
+// price font-size:16px;
 .price_fs16 {
     strong {
         font-size: 16px;
@@ -588,6 +609,7 @@ a{
 	    }
     }
 }
+// price font-size:21px;
 .price_fs21 {
     strong {
         font-size: 21px;
@@ -608,6 +630,7 @@ a{
 	    }
     }
 }
+// price font-size:38px;
 .price_fs38 {
     strong {
         font-size: 38px;
@@ -640,7 +663,7 @@ a{
 .soc__tw {@include sized-sprite($icons, tw);}
 .soc__fb {@include sized-sprite($icons, fb);}
 
-
+// title modefications
 .title {
     @include background-image(linear-gradient(#fff 0%, #fdfefe 50%, #eaf0f2 100%));
     div {
@@ -696,7 +719,7 @@ a{
 	}
 }
 
-
+// rating
 .rate {
 	strong {
 		color: #47463d;
@@ -710,6 +733,7 @@ a{
 	background: #fff;
 	padding: 0 22px;
 }
+// first tab style
 .tab {
 	display: inline-block;
 	overflow: hidden;
@@ -743,7 +767,6 @@ a{
 		}
 	}
 }
-
 .tab-border-wrap {
 	position: relative;
 	margin-bottom: 25px;
@@ -760,6 +783,7 @@ a{
 	}
 }
 
+// second tab style
 .tab-simple {
 	background: #fff;
 	display: inline-block;
@@ -779,7 +803,7 @@ a{
 		cursor: default;
 	}
 }
-
+// fourth tab style
 .tab-btn {
 	overflow: hidden;
 	display: inline-block;
@@ -898,10 +922,10 @@ a{
 .form-title {
 	margin: 10px 45px 30px 0;
 	height: 1px; 
-	color: $orange;
+	color: #f8a41f;
 	font-size: 18px;
 	line-height: 21px;
-	background: $orange_light;
+	background: #f8a41f_light;
 	span {
 		position: relative;
 		top: -11px;
@@ -938,6 +962,7 @@ a{
 .label_mod {
 	color: #000;
 }
+// input and textarea style
 .input {
 	float: left;
 	padding: 0 7px;
@@ -975,6 +1000,7 @@ a{
 		@include box-shadow(none);
 	}
 }
+// select style
 .select {
 	position: relative;
 	float: left;
@@ -1014,7 +1040,7 @@ a{
 .select_month {width: 75px;}
 .select_year {width: 52px;} 
 
-// checkbox
+// checkbox style
 .checkbox {
 	position: relative;
 	display: block;
@@ -1063,88 +1089,7 @@ a{
 	}
 }
 
-// infotmation block
-.info {
-	margin-bottom: 35px;
-	padding: 0 44px 14px 38px;
-	border: 1px solid $orange;
-	@include border-radius(4px);  
-}
-.info__wrap {
-	overflow: hidden;
-	margin-top: 8px;
-}
-.info_obj {
-	padding-right: 12px;
-	.info__title {
-		@include pts_b;
-	}
-	.info__item {
-		b {
-			display: block;
-			float: none;
-			@include pts_b;
-			font-size: 18px;
-		}
-		p {
-			color: #000;
-		}
-		.metro-st {
-			margin: 0 -15px 0 25px;
-		}
-	}
-}
-.info__flat {
-	margin-bottom: 18px;
-	color: #262a2a;
-	font-size: 18px;
-	overflow: hidden;
-	div {
-		float: left;
-	}
-	span {
-		color: #ed6c0d;
-	}
-	.soc-share {
-		float: right;
-	}
-}
-.info__item {
-	overflow: hidden;
-	b {
-		float: left;
-		margin-right: 4px;
-		font-weight: normal;
-	}
-	p {
-		overflow: hidden;
-		color: #6d828c;
-	}
-}
-.info__title {
-	position: relative;
-	top: -10px;
-	margin-left: -12px;
-	padding: 0 15px 0 12px;
-	background: #fff;
-	color: #000;
-	font-size: 25px;
-	@include pts_r;
-}
-.info__categ {
-	display: block;
-	margin: 22px 0 17px;
-	height: 1px;
-	color: #ecab11;
-	background: #f9e2b2;
-	b {
-		position: relative;
-		top: -10px;
-		display: block;
-		width: 147px;
-		background: #fff;
-	}
-}
+// list with options
 .list-opt {
 	li {
 		font-size: 18px;
@@ -1175,6 +1120,7 @@ a{
 	}
 }
 
+// pagination
 .pagin {
 	a {
 		display: inline-block;

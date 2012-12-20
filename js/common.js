@@ -70,9 +70,9 @@ $(document).ready(function(){
             $(this).next().slideDown("fast");
             $(this).children("i").addClass("icon_arr-t");
         };
-    }
+    });
     //--------------------- TABS ---------------------------//
-    tab
+    //tab
     $(".tab-cont").hide();
     $(".tab-cont1").show();
     $(".tab li:first").addClass("active");
