@@ -395,7 +395,7 @@
     }
     input {
         padding: 0 5px; 
-        height: 26px;
+        height: 26px; 
         width: 33px;
         color: #555; 
         background: #fff;
@@ -403,12 +403,131 @@
         @include border-radius(2px);
     }
 }
+
+// infotmation block
+.info {
+    margin-bottom: 35px;
+    padding: 0 44px 14px 38px;
+    border: 1px solid #f8a41f;
+    @include border-radius(4px);  
+}
+.info__wrap {
+    overflow: hidden;
+    margin-top: 8px;
+}
+.info_obj {
+    padding-right: 12px;
+    .info__title {
+        @include pts_b;
+    }
+    .info__item {
+        b {
+            display: block;
+            float: none;
+            @include pts_b;
+            font-size: 18px;
+        }
+        p {
+            color: #000;
+        }
+        .metro-st {
+            margin: 0 -15px 0 25px;
+        }
+    }
+}
+.info__flat {
+    margin-bottom: 18px;
+    color: #262a2a;
+    font-size: 18px;
+    overflow: hidden;
+    div {
+        float: left;
+    }
+    span {
+        color: #ed6c0d;
+    }
+    .soc-share {
+        float: right;
+    }
+}
+.info__item {
+    overflow: hidden;
+    b {
+        float: left;
+        margin-right: 4px;
+        font-weight: normal;
+    }
+    p {
+        overflow: hidden;
+        color: #6d828c;
+    }
+}
+.info__item-way {
+    display: inline-block;
+    min-width: 125px;
+}
+.info__title {
+    position: relative;
+    top: -10px;
+    margin-left: -12px;
+    padding: 0 15px 0 12px;
+    background: #fff;
+    color: #000;
+    font-size: 25px;
+    @include pts_r;
+}
+.info__categ {
+    display: block;
+    margin: 22px 0 17px;
+    height: 1px;
+    color: #ecab11;
+    background: #f9e2b2;
+    b {
+        position: relative;
+        top: -10px;
+        display: block;
+        width: 147px;
+        background: #fff;
+    }
+}
 .info_filter {
     padding-right: 26px; 
 }
+.info_my-filter {
+    padding-right: 26px;
+    .filter {
+        strong {
+            background: none;
+        }
+        .field {
+            float: right;
+            width: 160px;
+            margin-top: -37px;
+            clear: none;
+            input {
+                width: 144px;
+            }
+            label {
+                margin: 0 0 10px;
+                text-align: left;
+            }
+        }
+    }
+    .filter_price {
+        width: 220px;
+        margin-right: 7px;
+    }
+    .filter_type {
+        width: 415px;
+    }
+    .filter-wrap {
+        background: none;
+        overflow: visible;
+    }
+}
 .filter-slider {
     div {
-        color: #f36611; 
+        color: #f36611;  
         font-size: 14px;
         span {
             color: #000;
@@ -512,6 +631,7 @@
 .inform-list__footer {
     margin-top: 21px;
     overflow: hidden;
+    padding-right: 7px;
     span {
         float: left;
         font-size: 18px;
@@ -532,6 +652,7 @@
     &:hover {
         background: #f3f9f1;
         @include border-radius(6px);
+        @include transition(all, 0.3s, ease-in-out);
         .btn-aqua {
             display: inline-block;
         }
@@ -544,6 +665,19 @@
         right: 27px;
         height: 1px;
         background: #edf3f2; 
+    }
+}
+.inform_mod {
+    .inform__main {
+        padding-left: 24px;
+        width: 421px;
+    }
+    .inform__floor {
+        margin-bottom: 8px;
+    }
+    .inform__floor,
+    .inform__metro {
+        padding-left: 0;
     }
 }
 .inform__num {
@@ -595,6 +729,7 @@
 .inform__metro {
     padding-left: 24px;
     strong {
+        font-weight: normal;
         margin-left: 5px;
         padding-left: 10px;
         border-left: 1px solid #e6e6e6;
@@ -621,93 +756,6 @@
             display: block;
             text-align: center;
         }
-    }
-}
-
-// infotmation block
-.info {
-    margin-bottom: 35px;
-    padding: 0 44px 14px 38px;
-    border: 1px solid #f8a41f;
-    @include border-radius(4px);  
-}
-.info__wrap {
-    overflow: hidden;
-    margin-top: 8px;
-}
-.info_obj {
-    padding-right: 12px;
-    .info__title {
-        @include pts_b;
-    }
-    .info__item {
-        b {
-            display: block;
-            float: none;
-            @include pts_b;
-            font-size: 18px;
-        }
-        p {
-            color: #000;
-        }
-        .metro-st {
-            margin: 0 -15px 0 25px;
-        }
-    }
-}
-.info__flat {
-    margin-bottom: 18px;
-    color: #262a2a;
-    font-size: 18px;
-    overflow: hidden;
-    div {
-        float: left;
-    }
-    span {
-        color: #ed6c0d;
-    }
-    .soc-share {
-        float: right;
-    }
-}
-.info__item {
-    overflow: hidden;
-    b {
-        float: left;
-        margin-right: 4px;
-        font-weight: normal;
-    }
-    p {
-        overflow: hidden;
-        color: #6d828c;
-    }
-}
-.info__item-way {
-    display: inline-block;
-    min-width: 125px;
-}
-.info__title {
-    position: relative;
-    top: -10px;
-    margin-left: -12px;
-    padding: 0 15px 0 12px;
-    background: #fff;
-    color: #000;
-    font-size: 25px;
-    @include pts_r;
-}
-.info__categ {
-    display: block;
-    margin: 22px 0 17px;
-    height: 1px;
-    color: #ecab11;
-    background: #f9e2b2;
-    b {
-        position: relative;
-        top: -10px;
-        display: block;
-        width: 147px;
-        background: #fff;
     }
 }
 

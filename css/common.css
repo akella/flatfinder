@@ -1246,12 +1246,11 @@ a {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-  line-height: 10px;
+  line-height: 15px;
   color: #333; }
   .checkbox input {
     position: absolute;
     left: 0;
-    top: -2px;
     z-index: 1000;
     opacity: 0; }
     .checkbox input:checked + i:before {
@@ -1261,7 +1260,6 @@ a {
     position: absolute;
     z-index: 1;
     left: 0;
-    top: -2px;
     width: 11px;
     height: 11px;
     background: #fff;

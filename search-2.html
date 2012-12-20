@@ -1,0 +1,592 @@
+<!doctype html>
+<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Search2</title>
+    <!--[if lt IE 9]> 
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->
+    <link rel="stylesheet" media="screen" href="css/jquery-ui.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+    <link rel="stylesheet" media="screen" href="css/fotorama.css" >
+    
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.cycle.all.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div class="l-layout">
+        <!-- Header -->
+        <header class="header">
+            <div class="l-container header-wrap">
+                <a href="#" class="logo"></a>
+                <div class="nav-wrap">
+                    <div class="enter-city">
+                        <div class="select-city">
+                            <span>Ваш город:</span>
+                            <strong>Москва<i></i></strong>
+                            <ul>
+                                <li>Москва</li>
+                                <li class="active-city">Санкт-Петербург</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="enter"><i></i><span>Войти</span></a>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О проекте</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Миссия</a></li>
+                            <li><a href="#" class="btn">Как это работает?</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- END Header -->
+        <div class="l-cols l-cols_s">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+               <div class="filter-s">
+                   <div class="filter-s__item">
+                        <div class="filter-s__title">Регион <i class="icon"></i></div>
+                        <div class="js-extend">
+                           <ul>
+                               <li>Северо-западный</li>
+                               <li>Северный<i class="icon icon_del"></i></li>
+                               <li>Юго-зпадный<i class="icon icon_del"></i></li>
+                           </ul>
+                           <span class="more">Добавить еще</span>
+                        </div>
+                   </div>
+                   <span class="separator"></span>
+                   <div class="filter-s__item">
+                        <div class="filter-s__title">Метро<i class="icon"></i></div>
+                        <div class="js-extend">
+                           <ul>
+                               <li><span class="metro-st"><i></i>Текстильщики</span></li>
+                               <li><span class="metro-st"><i></i>Текстильщики</span></li>
+                               <li><span class="metro-st"><i></i>Текстильщики</span></li>
+                           </ul>
+                           <span class="more">Добавить еще</span>
+                            <label for="a1" class="checkbox">
+                                <input type="checkbox" id="a1">
+                                <i></i>
+                                Учитывать расстояние
+                            </label>
+                            <div class="select">
+                            <span></span>
+                                <select>
+                                    <option>Пешком</option>
+                                    <option>...</option>
+                                </select>
+                                <i></i>
+                            </div>
+                            <div class="filter-slider">
+                                <div id="slider-time"></div>
+                                <div>
+                                    <label for="filt_time"></label>
+                                    <div id="filt_time"></div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <span class="separator"></span>
+                   <div class="filter-s__item">
+                        <div class="filter-s__title">Тип платежа<i class="icon"></i></div>
+                        <div class="js-extend">
+                            <label for="a3" class="checkbox">
+                                <input type="checkbox" id="a3">
+                                <i></i>
+                                С залоговым платежом
+                            </label>
+                            <label for="a4" class="checkbox">
+                                <input type="checkbox" id="a4">
+                                <i></i>
+                                Без залогового платежа
+                            </label>
+                        </div>
+                   </div>
+                   <span class="separator"></span>
+                   <div class="filter-s__item">
+                        <div class="filter-s__title">Срок аренды<i class="icon"></i></div>
+                        <div class="js-extend">
+                            <div class="filter-slider">
+                                <div id="slider-term"></div>
+                                <div>
+                                    <label for="filt_term"></label>
+                                    <div id="filt_term"></div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <span class="separator"></span>
+                   <div class="filter-s__item">
+                        <div class="filter-s__title">Тип платежа<i class="icon"></i></div>
+                        <div class="js-extend">
+                            <label for="a5" class="checkbox">
+                                <input type="checkbox" id="a5">
+                                <i></i>
+                                Беспроводной интернет 
+                                <sup>816</sup>
+                            </label>
+                            <label for="a6" class="checkbox">
+                                <input type="checkbox" id="a6">
+                                <i></i>
+                                Телевизор
+                                <sup>1002</sup>
+                            </label>
+                            <label for="a7" class="checkbox">
+                                <input type="checkbox" id="a7">
+                                <i></i>
+                                Кухня
+                                <sup>544</sup>
+                            </label>
+                            <span class="more">Показать все</span>
+                        </div>
+                   </div>
+                   <span class="separator"></span>
+                   <div class="filter-s__item">
+                        <div class="filter-s__title">Для кого<i class="icon"></i></div>
+                        <div class="js-extend">    
+                            <ul class="tab-btn">
+                                <li data-tab=".tab-b-cont1">Один</li>
+                                <li data-tab=".tab-b-cont2">Семья</li>
+                                <li data-tab=".tab-b-cont3">С друзьями</li>
+                            </ul>
+                            <div class="tab-b-cont tab-b-cont1">
+                                <div class="input-s">
+                                    <label>Кол-во друзей</label>
+                                    <input type="text">
+                                </div>
+                                <div class="select">
+                                    <span></span>
+                                    <select>
+                                        <option>Только девушки</option>
+                                        <option>...</option>
+                                    </select>
+                                    <i></i>
+                                </div>
+                            </div>
+                            <div class="tab-b-cont tab-b-cont2">
+                                Some info
+                            </div>
+                            <div class="tab-b-cont tab-b-cont3">
+                                <div class="input-s">
+                                    <label>Кол-во друзей</label>
+                                    <input type="text">
+                                </div>
+                                <div class="select">
+                                    <span></span>
+                                    <select>
+                                        <option>Только девушки</option>
+                                        <option>...</option>
+                                    </select>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="filter-s__item">
+                        <div class="filter-s__title">Верификации<i class="icon"></i></div>
+                        <div class="js-extend"> 
+                            <label for="a8" class="checkbox">
+                                <input type="checkbox" id="a8">
+                                <i></i>
+                                С подтвержденным гражданством РФ
+                            </label>
+                            <label for="a9" class="checkbox">
+                                <input type="checkbox" id="a9">
+                                <i></i>
+                                С пропиской\регистрацией в «Название города»
+                            </label>
+                        </div>
+                   </div>
+               </div>
+            </aside>
+            <!-- END Sidebar -->
+            <!-- Main column -->
+            <div class="main-col">
+                <div class="info info_my-filter">
+                    <strong class="info__title">Я ищу арендаторов</strong>
+                    <div class="info__wrap">
+                        <div class="filter filter_price">
+                            <strong>Которые готовы платить</strong>
+                            <div class="filter-wrap">
+                                <div class="filter-slider ">
+                                    <div id="slider-price"></div>
+                                    <div>
+                                        <label for="filt_price"></label>
+                                        <div id="filt_price"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter filter_type">
+                            <strong>За</strong>
+                            <div class="filter-wrap">
+                                <ul class="tab">
+                                    <li data-tab=".tab-cont1"><span>Квартира</span></li>
+                                    <li data-tab=".tab-cont2"><span>Комната</span></li>
+                                </ul>
+                                <div class="field">
+                                    <label class="label">Количество комнат</label>
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-search">
+                            <i class="icon icon_search"></i>
+                            <input class="btn-green" type="submit" value="Найти">
+                        </div>
+                    </div>
+                </div>
+                <div class="inform-list">
+                    <div class="inform-list__head">
+                        <div class="inform-quant">
+                            <i class="icon icon_list"></i>
+                            Всего <span>711 объявлений</span>
+                        </div>
+                        <div class="sort">
+                            Сортировать по: 
+                            <a href="#">цене</a>,
+                            <a href="#">дате добавления</a>,
+                            <a href="#">удаленности от метро</a>
+                        </div>
+                    </div>
+                    <div class="inform inform_mod">
+                        <span class="inform__num">1.</span>
+                        <a href="#" class="inform__img">
+                            <img class="img" src="http://placesheen.com/120/84" alt="">
+                        </a>
+                        <div class="inform__main">
+                            <div>
+                                <h2 class="inform__title">
+                                    <a href="#">Трехкомнатная квартира в центре Москвы</a>
+                                </h2>
+                            </div>
+                            <div>
+                                <span class="inform__floor">1-2 комнатная квартира</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики, Кузьминки</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="inform__price">
+                            <div class="price price_fs21">
+                                <strong>21 000 <i>p</i></strong>
+                                <span>цена за месяц</span>
+                            </div>
+                            <div>
+                                <button class="btn-aqua"><i class="icon icon_star-w"></i>Добавить в избранное</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inform inform_mod">
+                        <span class="inform__num">1.</span>
+                        <a href="#" class="inform__img">
+                            <img class="img" src="http://placesheen.com/120/84" alt="">
+                        </a>
+                        <div class="inform__main">
+                            <div>
+                                <h2 class="inform__title">
+                                    <a href="#">Трехкомнатная квартира в центре Москвы</a>
+                                </h2>
+                            </div>
+                            <div>
+                                <span class="inform__floor">1-2 комнатная квартира</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики, Кузьминки</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="inform__price">
+                            <div class="price price_fs21">
+                                <strong>21 000 <i>p</i></strong>
+                                <span>цена за месяц</span>
+                            </div>
+                            <div>
+                                <button class="btn-aqua"><i class="icon icon_star-w"></i>Добавить в избранное</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inform inform_mod">
+                        <span class="inform__num">1.</span>
+                        <a href="#" class="inform__img">
+                            <img class="img" src="http://placesheen.com/120/84" alt="">
+                        </a>
+                        <div class="inform__main">
+                            <div>
+                                <h2 class="inform__title">
+                                    <a href="#">Трехкомнатная квартира в центре Москвы</a>
+                                </h2>
+                            </div>
+                            <div>
+                                <span class="inform__floor">1-2 комнатная квартира</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики, Кузьминки</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="inform__price">
+                            <div class="price price_fs21">
+                                <strong>21 000 <i>p</i></strong>
+                                <span>цена за месяц</span>
+                            </div>
+                            <div>
+                                <button class="btn-aqua"><i class="icon icon_star-w"></i>Добавить в избранное</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inform inform_mod">
+                        <span class="inform__num">1.</span>
+                        <a href="#" class="inform__img">
+                            <img class="img" src="http://placesheen.com/120/84" alt="">
+                        </a>
+                        <div class="inform__main">
+                            <div>
+                                <h2 class="inform__title">
+                                    <a href="#">Трехкомнатная квартира в центре Москвы</a>
+                                </h2>
+                            </div>
+                            <div>
+                                <span class="inform__floor">1-2 комнатная квартира</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики, Кузьминки</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="inform__price">
+                            <div class="price price_fs21">
+                                <strong>21 000 <i>p</i></strong>
+                                <span>цена за месяц</span>
+                            </div>
+                            <div>
+                                <button class="btn-aqua"><i class="icon icon_star-w"></i>Добавить в избранное</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inform inform_mod">
+                        <span class="inform__num">1.</span>
+                        <a href="#" class="inform__img">
+                            <img class="img" src="http://placesheen.com/120/84" alt="">
+                        </a>
+                        <div class="inform__main">
+                            <div>
+                                <h2 class="inform__title">
+                                    <a href="#">Трехкомнатная квартира в центре Москвы</a>
+                                </h2>
+                            </div>
+                            <div>
+                                <span class="inform__floor">1-2 комнатная квартира</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики, Кузьминки</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="inform__price">
+                            <div class="price price_fs21">
+                                <strong>21 000 <i>p</i></strong>
+                                <span>цена за месяц</span>
+                            </div>
+                            <div>
+                                <button class="btn-aqua"><i class="icon icon_star-w"></i>Добавить в избранное</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inform inform_mod">
+                        <span class="inform__num">1.</span>
+                        <a href="#" class="inform__img">
+                            <img class="img" src="http://placesheen.com/120/84" alt="">
+                        </a>
+                        <div class="inform__main">
+                            <div>
+                                <h2 class="inform__title">
+                                    <a href="#">Трехкомнатная квартира в центре Москвы</a>
+                                </h2>
+                            </div>
+                            <div>
+                                <span class="inform__floor">1-2 комнатная квартира</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики, Кузьминки</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="inform__price">
+                            <div class="price price_fs21">
+                                <strong>21 000 <i>p</i></strong>
+                                <span>цена за месяц</span>
+                            </div>
+                            <div>
+                                <button class="btn-aqua"><i class="icon icon_star-w"></i>Добавить в избранное</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inform inform_mod">
+                        <span class="inform__num">1.</span>
+                        <a href="#" class="inform__img">
+                            <img class="img" src="http://placesheen.com/120/84" alt="">
+                        </a>
+                        <div class="inform__main">
+                            <div>
+                                <h2 class="inform__title">
+                                    <a href="#">Трехкомнатная квартира в центре Москвы</a>
+                                </h2>
+                            </div>
+                            <div>
+                                <span class="inform__floor">1-2 комнатная квартира</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики, Кузьминки</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="inform__price">
+                            <div class="price price_fs21">
+                                <strong>21 000 <i>p</i></strong>
+                                <span>цена за месяц</span>
+                            </div>
+                            <div>
+                                <button class="btn-aqua"><i class="icon icon_star-w"></i>Добавить в избранное</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inform inform_mod">
+                        <span class="inform__num">1.</span>
+                        <a href="#" class="inform__img">
+                            <img class="img" src="http://placesheen.com/120/84" alt="">
+                        </a>
+                        <div class="inform__main">
+                            <div>
+                                <h2 class="inform__title">
+                                    <a href="#">Трехкомнатная квартира в центре Москвы</a>
+                                </h2>
+                            </div>
+                            <div>
+                                <span class="inform__floor">1-2 комнатная квартира</span>
+                                <div class="inform__metro">
+                                    <span class="metro-st"><i></i>Текстильщики, Кузьминки</span>
+                                    <strong>5 минут <a href="#">транспортом</a> до метро</strong>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="inform__price">
+                            <div class="price price_fs21">
+                                <strong>21 000 <i>p</i></strong>
+                                <span>цена за месяц</span>
+                            </div>
+                            <div>
+                                <button class="btn-aqua"><i class="icon icon_star-w"></i>Добавить в избранное</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inform-list__footer">
+                        <span class="inform-counter">1 — 21 из 711 объявлений</span>
+                        <div class="pagin">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#" class="all">Новые<i class="icon icon_arr-r"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- END main column -->
+        </div>
+        <div class="push"></div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer l-container">
+        <ul class="footer-nav">
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Правила использования</a></li>
+            <li><a href="#">Пользовательские соглашения</a></li>
+            <li><a href="#">Миссия</a></li>
+            <li><a href="#">Команда</a></li>
+        </ul>
+        <ul class="footer-nav">
+            <li><a href="#">Собственникам</a></li>
+            <li><a href="#">Арендаторам</a></li>
+            <li><a href="#">Юридическое сопровождение</a></li>
+        </ul>
+        <div class="soc">
+            <a href="#" class="soc__vk"></a>
+            <a href="#" class="soc__tw"></a>
+            <a href="#" class="soc__fb"></a>
+        </div>
+    </footer>
+    <!-- END Footer -->
+    <!-- Enter popup  -->
+    <div class="popup-bg"></div>
+    <div class="popup popup_enter">
+        <div class="popup__main">
+            <div class="popup__enter-col">
+                <form>
+                    <strong class="popup__title">Войти</strong>
+                    <a href="#" class="enter-soc ener-soc_vk">
+                        <span>Войти через <strong>Вконтакте</strong></span>
+                    </a>
+                    <a href="#" class="enter-soc ener-soc_tw">
+                        <span>Войти через <strong>Twitter</strong></span>
+                    </a>
+                    <a href="#" class="enter-soc ener-soc_fb">
+                        <span>Войти через <strong>Facebook</strong></span>
+                    </a>
+                    <div class="or"><span>или</span></div>
+                    <div class="field">
+                        <label class="label">E-mail</label>
+                        <input class="input input_s" type="text">
+                    </div>
+                    <div class="field">
+                        <label class="label">Пароль</label>
+                        <input class="input input_s" type="password">
+                    </div>
+                    <div class="btn-enter">
+                        <input class="btn" type="submit" value="Войти">
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="popup__reg-col">
+                <form>
+                    <strong class="popup__title">Регистрация</strong>
+                    <p>Регистрация на сайте позволит вам получить полный доступ ко всем функциям сайта.</p>
+                    <div class="field">
+                        <label class="label">E-mail</label>
+                        <input class="input input_m" type="text">
+                    </div>
+                    <div class="field">
+                        <label class="label">Имя</label>
+                        <input class="input input_m" type="password">
+                    </div>
+                    <div class="field">
+                        <label class="label">Фамилия</label>
+                        <input class="input input_m" type="text">
+                    </div>
+                    <div class="field">
+                        <label class="label">Пароль</label>
+                        <input class="input input_m" type="password">
+                    </div>
+                    <input class="btn btn_reg" type="submit" value="Зарегестрироваться">
+                </form>
+            </div>
+        </div>
+        <div class="popup__footer">
+        </div>
+    </div>
+    <!-- END Enter popup  -->
+</body>
+</html>
