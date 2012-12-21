@@ -297,6 +297,28 @@ a{
 /*---------------------------------------------- END Header -------------------------------------------- */
 
 /*----------------------------------------------  Blocks ----------------------------------------------- */
+.profile-nav-wrap {
+	height: 50px;
+	line-height: 50px;
+	@include background-image(linear-gradient(#fff 0%, #fdfefe 20%, #eaf0f2 100%));
+}
+.profile-nav {
+	width: 1000px;
+	margin: 0 auto;
+	li {
+		float: left;
+		margin-left: 30px;
+	}
+	a {
+		color: #004acc;
+		font-size: 21px;
+		@include pts_r;
+	}
+	.active {
+		color: #7e858a;
+		text-decoration: none;
+	}
+}
 // layout
 .l-cols {
 	margin: 0 auto;
@@ -528,7 +550,6 @@ a{
 		width: 100%;
 		height: 100%;
 		opacity: 0;
-		filter: Alpha(opacity=0);
 	}   
 }
 
@@ -631,6 +652,19 @@ a{
 	    }
     }
 }
+.price_fs18 {
+    strong {
+        font-size: 18px;
+        i {
+	        &:before,
+	        &:after {
+	            content: "";
+	            height: 2px;
+	            width: 9px;
+	        }
+	    }
+    }
+}
 // price font-size:21px;
 .price_fs21 {
     strong {
@@ -716,6 +750,31 @@ a{
     	margin-left: 20px;
     }
 } 
+
+.title-profile {
+	margin: 37px 0 34px;
+	height: 1px;
+	font-size: 40px;
+	line-height: 47px;
+	@include pts_r;
+	text-align: center;
+	background: #d2d9da;
+	span {
+		position: relative;
+		top: -25px;
+		font-weight: normal;
+		padding: 0 17px;
+		background: #fff;
+		* {
+			vertical-align: middle;
+		}
+	}
+	.btn { 
+		margin-left: 10px;
+		font-size: 13px;
+		@include pts_r;
+	}
+}
 
 .section-title {
 	margin: 20px 0 20px 3px;
