@@ -571,6 +571,7 @@ a{
 .icon_star-w {@include sized-sprite($icons, star-w);} 
 .icon_del {@include sized-sprite($icons, delite);}
 .icon_del2 {@include sized-sprite($icons, delite2);}
+.icon_del3 {@include sized-sprite($icons, delite3);}
 .icon_arr-b {@include sized-sprite($icons, arr6);}
 .icon_arr-t {@include sized-sprite($icons, arr5);}
 .icon_search {@include sized-sprite($icons, glass);}
@@ -752,27 +753,29 @@ a{
 } 
 
 .title-profile {
-	margin: 37px 0 34px;
+	margin: 37px 0 42px;
 	height: 1px;
 	font-size: 40px;
 	line-height: 47px;
 	@include pts_r;
 	text-align: center;
 	background: #d2d9da;
-	span {
+	.title-profile__wrap {
 		position: relative;
 		top: -25px;
 		font-weight: normal;
 		padding: 0 17px;
 		background: #fff;
-		* {
-			vertical-align: middle;
-		}
 	}
 	.btn { 
 		margin-left: 10px;
 		font-size: 13px;
 		@include pts_r;
+		vertical-align: middle;
+	}
+	.tab-wrap {
+		position: relative;
+		top: 6px;
 	}
 }
 
