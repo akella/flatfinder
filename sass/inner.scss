@@ -889,6 +889,22 @@
         float: left;
     }
 }
+.my-advert_mod {
+    .my-advert__main  {
+        width: 305px;
+        .metro-st {
+            display: inline-block;
+            font-weight: normal;
+            margin-left: 10px;
+        }
+    }
+    .price-item {
+        margin-right: 30px;
+    }
+    .btn-aqua {
+        float: left;
+    }
+}
 .my-advert__main {
     float: left;
     width: 325px;
@@ -903,6 +919,12 @@
         display: block;
         margin: 8px 0 9px -16px;
         font-weight: normal;
+    }
+}
+.my-advert__count {
+    color: #99a5ab;
+    i {
+        margin-right: 5px;
     }
 }
 // my requests page
@@ -988,3 +1010,4 @@
         cursor: pointer;
     }
 }
+

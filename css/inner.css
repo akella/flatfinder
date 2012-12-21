@@ -181,7 +181,7 @@
     position: absolute;
     left: -32px;
     top: 24px;
-    background: url('../img/icons-s2cd4185af9.png') 0 -104px no-repeat;
+    background: url('../img/icons-s372705706c.png') 0 -104px no-repeat;
     width: 33px;
     height: 21px; }
 
@@ -861,6 +861,17 @@
   .my-advert .price-item {
     float: left; }
 
+.my-advert_mod .my-advert__main {
+  width: 305px; }
+  .my-advert_mod .my-advert__main .metro-st {
+    display: inline-block;
+    font-weight: normal;
+    margin-left: 10px; }
+.my-advert_mod .price-item {
+  margin-right: 30px; }
+.my-advert_mod .btn-aqua {
+  float: left; }
+
 .my-advert__main {
   float: left;
   width: 325px;
@@ -874,6 +885,11 @@
     display: block;
     margin: 8px 0 9px -16px;
     font-weight: normal; }
+
+.my-advert__count {
+  color: #99a5ab; }
+  .my-advert__count i {
+    margin-right: 5px; }
 
 .my-request {
   float: left;
