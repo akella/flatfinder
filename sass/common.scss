@@ -109,7 +109,7 @@ a{
 	color: #1871c4;
 }
 .l-layout {
-    margin: 0 auto -156px;
+    margin: 0 auto -182px;
 	position: relative;
 	min-height: 100%;
 	height: auto !important;
@@ -117,7 +117,7 @@ a{
 }
 .push {
 	clear: both;
-	height: 156px;
+	height: 182px;
 }
 .wrapper {
     overflow: hidden;
@@ -927,10 +927,10 @@ a{
 .form-title {
 	margin: 10px 45px 30px 0;
 	height: 1px; 
-	color: #f8a41f;
+	color: #ffad00;
 	font-size: 18px;
 	line-height: 21px;
-	background: #f8a41f_light;
+	background: #ffad00;
 	span {
 		position: relative;
 		top: -11px;
@@ -1091,7 +1091,33 @@ a{
 		font-size: 12px;
 	}
 }
-
+// download file
+.download {
+	position: relative;
+	padding: 33px 48px;
+	width: 450px;
+	color: #d0d0d0;
+	text-align: center;
+	font: normal 21px/28px Trebuchet,Arial,sans-serif;
+    border: 3px dashed #bdd2d4;
+    label {
+    	color: #1c66d4;
+    	cursor: pointer;
+    }
+    span {
+    	position: relative;
+    	z-index: 2;
+    	border-bottom: 2px solid;
+    }
+    input {
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+    	width: 100%;
+    	height: 100%;
+    	opacity: 0;
+    }
+}
 // list with options
 .list-opt {
 	li {

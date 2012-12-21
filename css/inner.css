@@ -789,4 +789,37 @@
 .watch-form {
   display: inline-block;
   margin: 17px 0 0 17px;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow: hidden; }
+
+.profile-downl {
+  overflow: hidden;
+  margin-bottom: 47px; }
+  .profile-downl .profile-downl__img {
+    float: left;
+    color: #6e8b8e; }
+    .profile-downl .profile-downl__img img {
+      display: block;
+      margin-bottom: 6px; }
+  .profile-downl .download {
+    float: right; }
+
+.form-title_fixed {
+  margin-bottom: 52px; }
+  .form-title_fixed span {
+    display: inline-block;
+    padding-left: 0;
+    width: 130px; }
+
+.downl-photos {
+  overflow: hidden; }
+  .downl-photos div {
+    float: left;
+    margin-right: 23px;
+    color: #e71818;
+    font-size: 12px; }
+  .downl-photos img {
+    display: block;
+    margin-bottom: 6px; }
+  .downl-photos span {
+    cursor: pointer; }
