@@ -333,6 +333,11 @@ a{
 		border-bottom: 0;
 	}
 }
+.sidebar-nav_mod {
+	padding: 5px 17px;
+	background: #e2eff5;
+	@include border-radius(6px);
+}
 // main column
 .main-col {
 	float: right;

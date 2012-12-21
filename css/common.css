@@ -333,6 +333,15 @@ a {
   color: #000;
   border-bottom: 0; }
 
+.sidebar-nav_mod {
+  padding: 5px 17px;
+  background: #e2eff5;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px; }
+
 .main-col {
   float: right;
   width: 790px; }

@@ -198,6 +198,7 @@
     float: left;
     margin-top: -5px;
     width: 200px;
+    color: #4b656e;
     .rate {
         margin-bottom: 32px;
     }
@@ -781,4 +782,28 @@
         color: #000;
         margin-bottom: -2px;
     }
+}
+
+// profile comment page
+.profile-com-wrap {
+    margin-left: 26px;
+    .user-comm-title {
+        margin-top: -10px;
+        div {
+            margin-left: 0;
+        }
+    }
+    .com-text {
+        margin-left: 41px;
+        width: 372px;
+    }
+    .com-info {
+        float: right;
+        width: 160px;
+    }
+}
+.watch-form {
+    display: inline-block;
+    margin: 17px 0 0 17px;
+    font-size: 16px;
 }

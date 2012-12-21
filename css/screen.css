@@ -333,6 +333,15 @@ a {
   color: #000;
   border-bottom: 0; }
 
+.sidebar-nav_mod {
+  padding: 5px 17px;
+  background: #e2eff5;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px; }
+
 .main-col {
   float: right;
   width: 790px; }
@@ -1870,7 +1879,8 @@ a {
 .com-info {
   float: left;
   margin-top: -5px;
-  width: 200px; }
+  width: 200px;
+  color: #4b656e; }
   .com-info .rate {
     margin-bottom: 32px; }
 
@@ -2453,6 +2463,24 @@ a {
     display: block;
     color: #000;
     margin-bottom: -2px; }
+
+.profile-com-wrap {
+  margin-left: 26px; }
+  .profile-com-wrap .user-comm-title {
+    margin-top: -10px; }
+    .profile-com-wrap .user-comm-title div {
+      margin-left: 0; }
+  .profile-com-wrap .com-text {
+    margin-left: 41px;
+    width: 372px; }
+  .profile-com-wrap .com-info {
+    float: right;
+    width: 160px; }
+
+.watch-form {
+  display: inline-block;
+  margin: 17px 0 0 17px;
+  font-size: 16px; }
 
 * + html .choose-city a,
 * + html .enter i,
