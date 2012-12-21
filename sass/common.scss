@@ -344,7 +344,9 @@ a{
 	width: 790px;
 	@include clr;
 }
-
+.main-col-wrap {
+	padding-left: 33px;
+}
 // buttons style
 .btn {
 	display: inline-block;
@@ -516,6 +518,20 @@ a{
 	}
 }
 
+.btn-download {
+	position: relative;
+	display: inline-block;
+	input {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		filter: Alpha(opacity=0);
+	}   
+}
+
 // separator of sidebar
 .separator {
 	display: block;
@@ -533,6 +549,7 @@ a{
 .icon_star {@include sized-sprite($icons, star);}
 .icon_star-w {@include sized-sprite($icons, star-w);} 
 .icon_del {@include sized-sprite($icons, delite);}
+.icon_del2 {@include sized-sprite($icons, delite2);}
 .icon_arr-b {@include sized-sprite($icons, arr6);}
 .icon_arr-t {@include sized-sprite($icons, arr5);}
 .icon_search {@include sized-sprite($icons, glass);}
@@ -854,9 +871,9 @@ a{
 		padding-left: 51px;
 	}
 }
-.ener-soc_vk {@include sized-sprite($icons, vk2);}
-.ener-soc_tw {@include sized-sprite($icons, tw2);}
-.ener-soc_fb {@include sized-sprite($icons, fb2);}
+.enter-soc_vk {@include sized-sprite($icons, vk2);}
+.enter-soc_tw {@include sized-sprite($icons, tw2);}
+.enter-soc_fb {@include sized-sprite($icons, fb2);}
 
 // popups styles
 .popup-bg {
@@ -930,7 +947,7 @@ a{
 	color: #ffad00;
 	font-size: 18px;
 	line-height: 21px;
-	background: #ffad00;
+	background: #ffe2ad;
 	span {
 		position: relative;
 		top: -11px;
@@ -950,6 +967,13 @@ a{
 	line-height: 28px;
 	@include clr();
 	clear: both;
+}
+.field_mod {
+    .label {
+        margin-left: 0;
+        text-align: right;
+        width: auto;
+    }
 }
 .form-info {
 	float: left;

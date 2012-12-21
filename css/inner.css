@@ -181,7 +181,7 @@
     position: absolute;
     left: -32px;
     top: 24px;
-    background: url('../img/icons-s638a1b44ea.png') 0 -104px no-repeat;
+    background: url('../img/icons-s7a49bd19ff.png') 0 -104px no-repeat;
     width: 33px;
     height: 21px; }
 
@@ -774,7 +774,7 @@
     margin-bottom: -2px; }
 
 .profile-com-wrap {
-  margin-left: 26px; }
+  margin-left: -5px; }
   .profile-com-wrap .user-comm-title {
     margin-top: -10px; }
     .profile-com-wrap .user-comm-title div {
@@ -805,7 +805,7 @@
     float: right; }
 
 .form-title_fixed {
-  margin-bottom: 52px; }
+  margin: 46px 0 52px; }
   .form-title_fixed span {
     display: inline-block;
     padding-left: 0;
@@ -823,3 +823,30 @@
     margin-bottom: 6px; }
   .downl-photos span {
     cursor: pointer; }
+
+.profile-trust p {
+  margin-bottom: 22px; }
+
+.soc-serv {
+  overflow: hidden;
+  margin-bottom: 18px; }
+  .soc-serv .enter-soc {
+    float: right; }
+
+.soc-serv__main {
+  float: left;
+  width: 505px; }
+  .soc-serv__main p {
+    padding-left: 30px; }
+
+.soc-serv__title {
+  margin-bottom: 9px;
+  font-size: 16px;
+  font-weight: bold; }
+  .soc-serv__title .icon {
+    margin-right: 16px;
+    cursor: pointer; }
+
+.field__code {
+  float: left;
+  margin-right: 5px; }

@@ -5,5 +5,9 @@
 * + html .btn,
 * + html .btn-orange,
 * + html .metro-st i
-* + html .tab i {
+* + html .tab i,
+* + html .btn-download {
   display: inline; }
+
+* + html .btn-download input {
+  width: 45px; }

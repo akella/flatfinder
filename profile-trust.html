@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Profile Edit</title>
+	<title>Profile Trust</title>
     <!--[if lt IE 9]> 
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
     <![endif]-->
@@ -50,7 +50,7 @@
         <div class="l-cols l-cols_s">
             <!-- Sidebar -->
             <aside class="sidebar-s">
-                <nav class="sidebar-nav">
+                <nav class="sidebar-nav sidebar-nav_mod">
                     <ul>
                         <li><a href="#" class="active">Редактировать профиль</a></li>
                         <li><a href="#">Фотография</a></li>
@@ -58,132 +58,73 @@
                         <li><a href="#">Отзывы</a></li>
                     </ul>
                 </nav>
+                <a href="#" class="watch-form">Посмотреть анкету</a>
             </aside>
             <!-- END Sidebar -->
             <!-- Main column -->
             <div class="main-col">
-                <h2 class="form-title"><span>Обязательно</span></h2>
-                <fieldset class="fieldset">
-                    <div class="field">
-                        <label class="label">Имя</label>
-                        <input class="input" type="text">
-                    </div>
-                    <div class="field">
-                        <label class="label">Фамилия</label>
-                        <input class="input" type="text">
-                    </div>
-                    <span class="form-info">Эта информация доступна после того, как вы получаете подтверждение о бронировании от другого пользователя.</span>
-                </fieldset>
-                <fieldset class="fieldset">
-                    <div class="field">
-                        <label class="label label_mod">Пол</label>
-                        <div class="select">
-                            <span></span>
-                            <select>
-                                <option>мужской</option>
-                                <option>женский</option>
-                            </select>
-                            <i></i>
+                <div class="main-col-wrap profile-trust">
+                    <h2 class="form-title form-title_fixed"><span>Уже утверждено</span></h2>
+                    <p>Эта информация доступна после того, как вы получаете подтверждение</p>
+                    <h2 class="form-title form-title_fixed"><span>Социальные сервисы</span></h2>
+                    <div class="soc-serv">
+                        <div class="soc-serv__main">
+                            <div class="soc-serv__title"><i class="icon icon_del2"></i>Связан с Facebook</div>
+                            <p>
+                                Войдите через Facebook и Вы обнаружите наши дружественные связи с хозяевами и гостями по всему миру.
+                            </p>
                         </div>
+                        <a href="#" class="enter-soc enter-soc_fb">
+                            <span>Войти через <strong>Facebook</strong></span>
+                        </a>
                     </div>
-                    <div class="field">
-                        <label class="label label_mod">Пол</label>
-                        <div class="select select_date">
-                            <span></span>
-                            <select>
-                                <option>01</option>
-                                <option>02</option>
-                                <option>...</option>
-                                <option>04</option>
-                                <option>31</option>
-                            </select>
-                            <i></i>
+                    <div class="soc-serv">
+                        <div class="soc-serv__main">
+                            <div class="soc-serv__title"><i class="icon icon_del2"></i>Связан с Facebook</div>
+                            <p>
+                                Войдите через Вконтакте и Вы обнаружите наши дружественные связи с хозяевами и гостями по всему миру.
+                            </p>
                         </div>
-                        <div class="select select_month">
-                            <span></span>
-                            <select>
-                                <option>январь</option>
-                                <option>февраль</option>
-                                <option>...</option>
-                                <option>ноябрь</option>
-                                <option>декабрь</option>
-                            </select>
-                            <i></i>
-                        </div>
-                        <div class="select select_year">
-                            <span></span>
-                            <select>
-                                <option>2012</option>
-                                <option>2011</option>
-                                <option>...</option>
-                                <option>1901</option>
-                                <option>1900</option>
-                            </select>
-                            <i></i>
-                        </div>
+                        <a href="#" class="enter-soc enter-soc_vk">
+                            <span>Войти через <strong>Вконтакте</strong></span>
+                        </a>
                     </div>
-                    <div class="field">
-                        <label class="label">Электронный адрес</label>
-                        <input class="input" type="text">
-                    </div>
-                    <div class="field">
+                    <h2 class="form-title form-title_fixed"><span>Проверка телефона</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                    <div class="field field_mod">
                         <label class="label">Номер телефона</label>
-                        <input class="input" type="text">
+                        <b class="field__code">+7</b>
+                        <input class="input input_m" type="text">
                     </div>
-                </fieldset>
-                <fieldset class="fieldset">
-                    <div class="field">
-                        <label class="label">Город</label>
-                        <input class="input" type="text">
-                    </div>
-                    <div class="field">
-                        <label class="label">Расскажите о себе</label>
-                        <textarea class="input textarea"></textarea>   
-                    </div>
-                </fieldset>
-                <h2 class="form-title form-title_mod"><span>Дополнительно</span></h2>
-                <fieldset class="fieldset">
-                    <div class="field">
-                        <label class="label">Учебное заведение</label>
-                        <input class="input" type="text">
-                    </div>
-                    <div class="field">
-                        <label class="label">Место работы</label>
-                        <input class="input" type="text">  
-                    </div>
-                    <div class="field">
-                        <label class="label">Интересы</label>
-                        <input class="input" type="text">
-                    </div>
-                    <div class="field">
-                        <label class="label label_mod">Отношение к алкоголю</label>
-                        <div class="select">
-                            <span></span>
-                            <select>
-                                <option>резко отрицательное</option>
-                                <option>...</option>
-                            </select>
-                            <i></i>
+                    <h2 class="form-title form-title_fixed"><span>Права собственности</span></h2>
+                    <div class="field field_mod">
+                        <label class="label">Свидетельство о собственности</label>
+                        <div class="btn btn-download">
+                            <span>Загрузить</span>
+                            <input type="file">
                         </div>
                     </div>
-                    <div class="field">
-                        <label class="label label_mod">Отношение к курению</label>
-                        <div class="select">
-                            <span></span>
-                            <select>
-                                <option>резко отрицательное</option>
-                                <option>...</option>
-                            </select>
-                            <i></i>
+                    <h2 class="form-title form-title_fixed"><span>Документы</span></h2>
+                    <div class="field field_mod">
+                        <label class="label">Свидетельство о собственности</label>
+                        <div class="btn btn-download">
+                            <span>Загрузить</span>
+                            <input type="file">
                         </div>
                     </div>
-                </fieldset>
-                <fieldset class="fieldset">
-                    <div class="field">
-                        <input class="btn btn_save" type="submit" value="Сохранить изменения">
-                        <input class="btn-gray" type="reset" value="Отменить">
+                    <div class="field field_mod">
+                        <label class="label">Свидетельство о собственности</label>
+                        <div class="btn btn-download">
+                            <span>Загрузить</span>
+                            <input type="file">
+                        </div>
                     </div>
-                </fieldset>
+                </div>
             </div>
             <!-- END main column -->
         </div>
