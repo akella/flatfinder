@@ -1,0 +1,239 @@
+<!doctype html>
+<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Add advert</title>
+    <!--[if lt IE 9]> 
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+    <link rel="stylesheet" media="screen" href="css/fotorama.css" >
+    <link rel="stylesheet" media="screen" href="css/jquery-ui.css" >
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.cycle.all.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div class="l-layout">
+        <!-- Header -->
+        <header class="header">
+            <div class="l-container header-wrap">
+                <a href="#" class="logo"></a>
+                <div class="nav-wrap">
+                    <div class="enter-city">
+                        <div class="select-city">
+                            <span>Ваш город:</span>
+                            <strong>Москва<i></i></strong>
+                            <ul>
+                                <li>Москва</li>
+                                <li class="active-city">Санкт-Петербург</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="enter"><i></i><span>Войти</span></a>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#" class="active">Главная</a></li>
+                            <li><a href="#">О проекте</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Миссия</a></li>
+                            <li><a href="#" class="btn">Как это работает?</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- END Header -->
+        <div class="profile-nav-wrap">
+            <ul class="profile-nav">
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Мои объявления</a></li>
+                <li><a href="#" class="active">Заявки и сделки</a></li>
+                <li><a href="#">Аккаунт</a></li>
+                <li><a href="#">Избранное</a></li>
+            </ul>
+        </div>
+        <div class="l-cols l-cols_s l-cols_profile">
+            <h1 class="title-profile">
+                <span class="title-profile__wrap">
+                    Настройки
+                </span>
+            </h1>
+            <div class="prof-set">
+                <strong class="form-title-prof">Информация о жилье</strong>
+                <p>Постарайтесь максимально правдиво и информативно рассказать о жилье, которое вы хотите снять.</p>
+                <div class="wrapper">
+                    <div class="select select_flat">
+                        <span></span>
+                        <select>
+                            <option>Квартира</option>
+                            <option>...</option>
+                        </select>
+                        <i></i>
+                    </div>
+                    <div class="filter filter_price">
+                        <strong>Пешком</strong>
+                        <div class="filter-wrap">
+                            <div class="filter-slider">
+                                <div id="slider-type2"></div>
+                                <div>
+                                    <label for="filt_type2"></label>
+                                    <div id="filt_type2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field field_counter field_static">
+                <label class="label">Заголовок</label>
+                <input class="input" type="text">
+                <span class="input-counter">35</span>
+            </div>
+            <div class="field field_textarea field_static ">
+                <label class="label">Описание</label>
+                <textarea class="input textarea textarea_big"></textarea>
+            </div>
+            <div class="wrapper">
+                <div class="input-s input-s_diapazon">
+                    <label>Введите диапазон цен</label>
+                    <input type="text">
+                    <label>по</label>
+                    <input type="text">
+                </div>
+                <div class="select select_tax">
+                    <span></span>
+                    <select>
+                        <option>Без залогового платежа</option>
+                        <option>...</option>
+                    </select>
+                    <i></i>
+                </div>
+            </div>
+            <strong class="form-title-prof">Адресная информация</strong>
+            <p>Постарайтесь максимально правдиво и информативно рассказать о жилье, которое вы собираетесь сдавать, чтобы <br>арендатор мог быстро понять подходит ли оно ему.</p>
+            <div class="field field_static">
+                <label class="label">Страна</label>
+                <input class="input" type="text">
+            </div>
+            <div class="field field_static">
+                <label class="label">Город</label>
+                <input class="input" type="text">
+            </div>
+            <div class="wrapper">
+                <div class="district">
+                    <div>Район: Северозападный, Юговосточный, Южный</div>
+                    <span class="add">Добавить район</span>
+                </div>
+                <div class="metro-stations">
+                    <div>
+                        <span class="metro-st"><i></i>Текстильщики</span>
+                        <span class="metro-st"><i></i>Текстильщики</span>
+                        <span class="metro-st"><i></i>Текстильщики</span>
+                    </div>
+                    <span class="add">Выбрать станции метро</span>
+                </div>
+            </div>
+            <div class="select select_flat">
+                <span></span>
+                <select>
+                    <option>Квартира</option>
+                    <option>...</option>
+                </select>
+                <i></i>
+            </div>
+            <div class="filter-slider">
+                <div id="slider-time"></div>
+                <div>
+                    <label for="filt_time"></label>
+                    <div id="filt_time"></div>
+                </div>
+            </div>
+        </div>
+        <div class="push"></div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer l-container">
+        <ul class="footer-nav">
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Правила использования</a></li>
+            <li><a href="#">Пользовательские соглашения</a></li>
+            <li><a href="#">Миссия</a></li>
+            <li><a href="#">Команда</a></li>
+        </ul>
+        <ul class="footer-nav">
+            <li><a href="#">Собственникам</a></li>
+            <li><a href="#">Арендаторам</a></li>
+            <li><a href="#">Юридическое сопровождение</a></li>
+        </ul>
+        <div class="soc">
+            <a href="#" class="soc__vk"></a>
+            <a href="#" class="soc__tw"></a>
+            <a href="#" class="soc__fb"></a>
+        </div>
+    </footer>
+    <!-- END Footer -->
+    <!-- Enter popup  -->
+    <div class="popup-bg"></div>
+    <div class="popup popup_enter">
+        <div class="popup__main">
+            <div class="popup__enter-col">
+                <form>
+                    <strong class="popup__title">Войти</strong>
+                    <a href="#" class="enter-soc enter-soc_vk">
+                        <span>Войти через <strong>Вконтакте</strong></span>
+                    </a>
+                    <a href="#" class="enter-soc enter-soc_tw">
+                        <span>Войти через <strong>Twitter</strong></span>
+                    </a>
+                    <a href="#" class="enter-soc enter-soc_fb">
+                        <span>Войти через <strong>Facebook</strong></span>
+                    </a>
+                    <div class="or"><span>или</span></div>
+                    <div class="field">
+                        <label class="label">E-mail</label>
+                        <input class="input input_s" type="text">
+                    </div>
+                    <div class="field">
+                        <label class="label">Пароль</label>
+                        <input class="input input_s" type="password">
+                    </div>
+                    <div class="btn-enter">
+                        <input class="btn" type="submit" value="Войти">
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="popup__reg-col">
+                <form>
+                    <strong class="popup__title">Регистрация</strong>
+                    <p>Регистрация на сайте позволит вам получить полный доступ ко всем функциям сайта.</p>
+                    <div class="field">
+                        <label class="label">E-mail</label>
+                        <input class="input input_m" type="text">
+                    </div>
+                    <div class="field">
+                        <label class="label">Имя</label>
+                        <input class="input input_m" type="password">
+                    </div>
+                    <div class="field">
+                        <label class="label">Фамилия</label>
+                        <input class="input input_m" type="text">
+                    </div>
+                    <div class="field">
+                        <label class="label">Пароль</label>
+                        <input class="input input_m" type="password">
+                    </div>
+                    <input class="btn btn_reg" type="submit" value="Зарегестрироваться">
+                </form>
+            </div>
+        </div>
+        <div class="popup__footer">
+        </div>
+    </div>
+    <!-- END Enter popup  -->
+</body>
+</html>

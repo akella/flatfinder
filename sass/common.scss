@@ -1047,6 +1047,33 @@ a{
         width: auto;
     }
 }
+.field_static {
+	.label {
+		margin: 0 20px 0 0;
+		width: 62px;
+		word-wrap: break-word;
+		line-height: 25px;
+	}
+}
+.field_counter {
+	position: relative;
+	.input {
+		padding-right: 35px;
+		width: 401px;
+	}
+}
+.field_textarea {
+	height: auto;
+}
+.input-counter {
+	float: left;
+	margin:1px 0 0 -30px; 
+	height: 26px;
+	width: 28px;
+	text-align: center;
+	font-weight: bold;
+	border-left: 1px solid #e8e1e1;
+}
 .form-info {
 	float: left;
 	margin-left: 142px;
@@ -1092,6 +1119,9 @@ a{
 	resize: vertical;
 	padding-top: 5px; 
 	min-height: 110px;
+}
+.textarea_big {
+	min-height: 210px;
 }
 .textarea_mod {
 	background: #fff;

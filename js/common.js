@@ -145,7 +145,8 @@ $(document).ready(function(){
         $( "#filt_price" ).html( "<span>от</span> " + $( "#slider-price" ).slider( "values", 0 ) + ' р' +
             " <span>до</span> " + $( "#slider-price" ).slider( "values", 1 ) + ' р' );
     });
-    // filter price
+
+    // filter type
     $(function() {
         $( "#slider-type" ).slider({
             range: true,
@@ -158,6 +159,20 @@ $(document).ready(function(){
         });
         $( "#filt_type" ).html( "<span>от</span> " + $( "#slider-type" ).slider( "values", 0 ) +
             " <span>до</span> " + $( "#slider-type" ).slider( "values", 1 ) + ' комнат' );
+    });
+    // filter type 2
+    $(function() {
+        $( "#slider-type2" ).slider({
+            range: true,
+            min: 1,
+            max: 6,
+            values: [ 0, 2 ],
+            slide: function( event, ui ) {
+                $( "#filt_type2" ).html( "<span>от</span> " + ui.values[ 0 ] + " <span>до</span> " + ui.values[ 1 ]);
+            }
+        });
+        $( "#filt_type2" ).html( "<span>от</span> " + $( "#slider-type2" ).slider( "values", 0 ) +
+            " <span>до</span> " + $( "#slider-type2" ).slider( "values", 1 ));
     });
 
 });
