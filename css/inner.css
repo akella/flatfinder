@@ -181,7 +181,7 @@
     position: absolute;
     left: -32px;
     top: 24px;
-    background: url('../img/icons-s372705706c.png') 0 -104px no-repeat;
+    background: url('../img/icons-s01ef6cbccb.png') 0 -104px no-repeat;
     width: 33px;
     height: 21px; }
 
@@ -958,3 +958,42 @@
     right: -91px;
     top: 27px;
     cursor: pointer; }
+
+.prof-notice {
+  position: relative;
+  margin-bottom: 5px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eef1f4; }
+  .prof-notice:last-child {
+    border-bottom: 0; }
+  .prof-notice span {
+    display: block;
+    color: #bcc6c7;
+    font-size: 12px; }
+  .prof-notice a {
+    text-decoration: none;
+    border-bottom: 2px solid #7fa9e5; }
+  .prof-notice .icon_del3 {
+    position: absolute;
+    right: -10px;
+    top: 27px;
+    cursor: pointer; }
+  .prof-notice .icon_man {
+    margin-right: 2px;
+    vertical-align: middle; }
+
+.invite-friend {
+  margin-top: -15px;
+  padding: 22px 40px 33px;
+  background: #f4f9f1;
+  text-align: center;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px; }
+  .invite-friend span {
+    color: #2d312b;
+    font-size: 28px; }
+  .invite-friend .btn {
+    margin-top: 12px; }

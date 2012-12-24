@@ -1011,3 +1011,49 @@
     }
 }
 
+// personal page(profile)
+.prof-notice {
+    position: relative;
+    margin-bottom: 5px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eef1f4;
+    &:last-child {
+        border-bottom: 0;
+    }
+    span {
+        display: block;
+        color: #bcc6c7;
+        font-size: 12px;
+    }
+    div {
+
+    }
+    a {
+        text-decoration: none;
+        border-bottom: 2px solid #7fa9e5;
+    }
+    .icon_del3 {
+        position: absolute;
+        right: -10px;
+        top: 27px;
+        cursor: pointer;
+    }
+    .icon_man {
+        margin-right: 2px;
+        vertical-align: middle;
+    }
+}
+.invite-friend {
+    margin-top: -15px;
+    padding: 22px 40px 33px;
+    background: #f4f9f1;
+    text-align: center;
+    @include border-radius(6px);
+    span {
+        color: #2d312b;
+        font-size: 28px;
+    }
+    .btn {
+        margin-top: 12px;
+    }
+}

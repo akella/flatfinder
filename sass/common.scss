@@ -298,6 +298,7 @@ a{
 
 /*----------------------------------------------  Blocks ----------------------------------------------- */
 .profile-nav-wrap {
+	margin-bottom: 20px;
 	height: 50px;
 	line-height: 50px;
 	@include background-image(linear-gradient(#fff 0%, #fdfefe 20%, #eaf0f2 100%));
@@ -398,6 +399,13 @@ a{
 	font-size: 18px;
 	padding: 0 11px;
 }
+.btn_giga {
+	display: block;
+	height: 66px;
+	line-height: 66px;
+	font-size: 31px;
+}
+
 
 .btn-orange {
 	display: inline-block;
@@ -578,6 +586,7 @@ a{
 .icon_list {@include sized-sprite($icons, list);}
 .icon_arr-r {@include sized-sprite($icons, arr7);}
 .icon_eye {@include sized-sprite($icons, eye);}
+.icon_man {@include sized-sprite($icons, man);}
 
 // metro station
 .metro-st {
