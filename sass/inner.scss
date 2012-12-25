@@ -822,13 +822,14 @@
     .profile-downl__img {
         float: left;
         color: #6e8b8e;
+        margin-right: 44px;
         img {
             display: block;
             margin-bottom: 6px;
         }
     }
     .download {
-        float: right;
+        overflow: hidden;
     }
 }
 .form-title_fixed {
@@ -1254,4 +1255,53 @@
     .select {
         width: 80px;
     }
+} 
+.wrapper_filt-inp {
+    .field  {
+        float: left;
+        margin-right: 10px;
+        input {
+            width: 65px;
+        }
+        label {
+            width: 110px;
+            text-align: right;
+        }
+    }
+}
+.add-dial-photo {
+    float: left;
+    width: 730px;
+    margin-left: 25px;
+    p {
+        margin-bottom: 20px;
+    }
+}
+.downl-photos_mod {
+    float: right;
+    width: 230px;
+    div {
+        float: none;
+        overflow: hidden;
+        margin: 0 0 20px 0;
+        div {
+            overflow: hidden;
+        }
+    }
+    img {
+        float: left;
+        margin-right: 15px;
+    }
+    span {
+        display: block;
+    }
+    a {
+        text-decoration: none;
+        border-bottom: 1px dashed;
+        font-size: 12px;
+    }
+}
+.btn_add-dial {
+    margin: -15px auto 0;
+    width: 770px;
 } 

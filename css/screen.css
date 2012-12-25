@@ -1250,7 +1250,7 @@ a {
   word-wrap: break-word;
   line-height: 25px; }
 .field_static .input-s {
-  padding-left: 34px; }
+  margin-left: 20px; }
 
 .field_counter {
   position: relative; }
@@ -2658,12 +2658,13 @@ a {
   margin-bottom: 47px; }
   .profile-downl .profile-downl__img {
     float: left;
-    color: #6e8b8e; }
+    color: #6e8b8e;
+    margin-right: 44px; }
     .profile-downl .profile-downl__img img {
       display: block;
       margin-bottom: 6px; }
   .profile-downl .download {
-    float: right; }
+    overflow: hidden; }
 
 .form-title_fixed {
   margin: 46px 0 52px; }
@@ -3012,6 +3013,45 @@ a {
     color: #999; }
   .wrapper-metro-dist .select {
     width: 80px; }
+
+.wrapper_filt-inp .field {
+  float: left;
+  margin-right: 10px; }
+  .wrapper_filt-inp .field input {
+    width: 65px; }
+  .wrapper_filt-inp .field label {
+    width: 110px;
+    text-align: right; }
+
+.add-dial-photo {
+  float: left;
+  width: 730px;
+  margin-left: 25px; }
+  .add-dial-photo p {
+    margin-bottom: 20px; }
+
+.downl-photos_mod {
+  float: right;
+  width: 230px; }
+  .downl-photos_mod div {
+    float: none;
+    overflow: hidden;
+    margin: 0 0 20px 0; }
+    .downl-photos_mod div div {
+      overflow: hidden; }
+  .downl-photos_mod img {
+    float: left;
+    margin-right: 15px; }
+  .downl-photos_mod span {
+    display: block; }
+  .downl-photos_mod a {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    font-size: 12px; }
+
+.btn_add-dial {
+  margin: -15px auto 0;
+  width: 770px; }
 
 .lteie8 .btn-download input {
   filter: Alpha(opacity=0); }

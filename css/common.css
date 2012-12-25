@@ -1250,7 +1250,7 @@ a {
   word-wrap: break-word;
   line-height: 25px; }
 .field_static .input-s {
-  padding-left: 34px; }
+  margin-left: 20px; }
 
 .field_counter {
   position: relative; }

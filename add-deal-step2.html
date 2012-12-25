@@ -1,0 +1,347 @@
+<!doctype html>
+<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Add deal Step2</title>
+    <!--[if lt IE 9]> 
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+    <link rel="stylesheet" media="screen" href="css/fotorama.css" >
+    <link rel="stylesheet" media="screen" href="css/jquery-ui.css" >
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.cycle.all.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div class="l-layout">
+        <!-- Header -->
+        <header class="header">
+            <div class="l-container header-wrap">
+                <a href="#" class="logo"></a>
+                <div class="nav-wrap">
+                    <div class="enter-city">
+                        <div class="select-city">
+                            <span>Ваш город:</span>
+                            <strong>Москва<i></i></strong>
+                            <ul>
+                                <li>Москва</li>
+                                <li class="active-city">Санкт-Петербург</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="enter"><i></i><span>Войти</span></a>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#" class="active">Главная</a></li>
+                            <li><a href="#">О проекте</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Миссия</a></li>
+                            <li><a href="#" class="btn">Как это работает?</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- END Header -->
+        <div class="profile-nav-wrap">
+            <ul class="profile-nav">
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Мои объявления</a></li>
+                <li><a href="#" class="active">Заявки и сделки</a></li>
+                <li><a href="#">Аккаунт</a></li>
+                <li><a href="#">Избранное</a></li>
+            </ul>
+        </div>
+        <div class="l-cols l-cols_s add-advert">
+            <h1 class="title-profile">
+                <span class="title-profile__wrap">
+                    Добавить объявление о сдаче жилья
+                </span>
+            </h1>
+            <form>
+                <div class="add-advert-wrap">
+                    <div class="prof-set">
+                        <strong class="form-title-prof">Подробности</strong>
+                        <p>Постарайтесь максимально правдиво и информативно рассказать о жилье, которое вы собираетесь сдавать, чтобы арендатор мог быстро понять подходит ли оно ему.</p>
+                        <div class="wrapper wrapper_wc">
+                            <label>Санузел</label>
+                            <div class="select">
+                                <span>Совмещенный</span>
+                                <select>
+                                    <option>Совмещенный</option>
+                                    <option>...</option>
+                                </select>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="wrapper wrapper_filt-inp">
+                            <div class="field field_mod">
+                                <label class="label">Общая площадь</label>
+                                <input class="input" type="text">
+                            </div>
+                            <div class="field field_mod">
+                                <label class="label">Жилая площадь</label>
+                                <input class="input" type="text">
+                            </div>
+                            <div class="field field_mod">
+                                <label class="label">Площадь кухни</label>
+                                <input class="input" type="text">
+                            </div>
+                            <div class="field field_mod">
+                                <label class="label">Этаж</label>
+                                <input class="input" type="text">
+                            </div>
+                            <div class="field field_mod">
+                                <label class="label">Этажей всего</label>
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <ul class="checkbox-list">
+                                <li>
+                                    <label for="o1" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o1">
+                                        <i></i>
+                                        Можно курить
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o2" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o2">
+                                        <i></i>
+                                        Можно с питомцами
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o3" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o3">
+                                        <i></i>
+                                        Телевизор
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o4" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o4">
+                                        <i></i>
+                                        Кабельное телевидение
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o5" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o5">
+                                        <i></i>
+                                        Интернет
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o6" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o6">
+                                        <i></i>
+                                        Балкон
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="checkbox-list">
+                                <li>
+                                    <label for="o7" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o7">
+                                        <i></i>
+                                        Wi-Fi
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o8" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o8">
+                                        <i></i>
+                                        Кондиционер
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o9" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o9">
+                                        <i></i>
+                                        Лифт
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o10" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o10">
+                                        <i></i>
+                                        Парковочное место
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o11" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o11">
+                                        <i></i>
+                                        Консъерж
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o12" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o12">
+                                        <i></i>
+                                        Холодильник
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="checkbox-list">
+                                <li>
+                                    <label for="o13" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o13">
+                                        <i></i>
+                                        Джакузи
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o14" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o14">
+                                        <i></i>
+                                        Домофон
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o15" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o15">
+                                        <i></i>
+                                        Стиральная машина
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o16" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o16">
+                                        <i></i>
+                                        Телефон
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o17" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o17">
+                                        <i></i>
+                                        Мебель
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="o18" class="checkbox checkbox_big">
+                                        <input type="checkbox" id="o18">
+                                        <i></i>
+                                        Посудомоечная машина
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="wrapper checkbox-row">
+                            <label for="o19" class="checkbox checkbox_big">
+                                <input type="checkbox" id="o19">
+                                <i></i>
+                                Рядом спортзал
+                            </label>
+                            <label for="o20" class="checkbox checkbox_big">
+                                <input type="checkbox" id="o20">
+                                <i></i>
+                                Рядом торговый комплекс
+                            </label>
+                            <label for="o21" class="checkbox checkbox_big">
+                                <input type="checkbox" id="o21">
+                                <i></i>
+                                Рядом поликлинника или больница
+                            </label>
+                            <label for="o22" class="checkbox checkbox_big">
+                                <input type="checkbox" id="o22">
+                                <i></i>
+                               Рядом детский сад
+                            </label>
+                        </div>
+                        <input class="btn" type="submit" value="Сохранить и продолжить">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="push"></div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer l-container">
+        <ul class="footer-nav">
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Правила использования</a></li>
+            <li><a href="#">Пользовательские соглашения</a></li>
+            <li><a href="#">Миссия</a></li>
+            <li><a href="#">Команда</a></li>
+        </ul>
+        <ul class="footer-nav">
+            <li><a href="#">Собственникам</a></li>
+            <li><a href="#">Арендаторам</a></li>
+            <li><a href="#">Юридическое сопровождение</a></li>
+        </ul>
+        <div class="soc">
+            <a href="#" class="soc__vk"></a>
+            <a href="#" class="soc__tw"></a>
+            <a href="#" class="soc__fb"></a>
+        </div>
+    </footer>
+    <!-- END Footer -->
+    <!-- Enter popup  -->
+    <div class="popup-bg"></div>
+    <div class="popup popup_enter">
+        <div class="popup__main">
+            <div class="popup__enter-col">
+                <form>
+                    <strong class="popup__title">Войти</strong>
+                    <a href="#" class="enter-soc enter-soc_vk">
+                        <span>Войти через <strong>Вконтакте</strong></span>
+                    </a>
+                    <a href="#" class="enter-soc enter-soc_tw">
+                        <span>Войти через <strong>Twitter</strong></span>
+                    </a>
+                    <a href="#" class="enter-soc enter-soc_fb">
+                        <span>Войти через <strong>Facebook</strong></span>
+                    </a>
+                    <div class="or"><span>или</span></div>
+                    <div class="field">
+                        <label class="label">E-mail</label>
+                        <input class="input input_s" type="text">
+                    </div>
+                    <div class="field">
+                        <label class="label">Пароль</label>
+                        <input class="input input_s" type="password">
+                    </div>
+                    <div class="btn-enter">
+                        <input class="btn" type="submit" value="Войти">
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="popup__reg-col">
+                <form>
+                    <strong class="popup__title">Регистрация</strong>
+                    <p>Регистрация на сайте позволит вам получить полный доступ ко всем функциям сайта.</p>
+                    <div class="field">
+                        <label class="label">E-mail</label>
+                        <input class="input input_m" type="text">
+                    </div>
+                    <div class="field">
+                        <label class="label">Имя</label>
+                        <input class="input input_m" type="password">
+                    </div>
+                    <div class="field">
+                        <label class="label">Фамилия</label>
+                        <input class="input input_m" type="text">
+                    </div>
+                    <div class="field">
+                        <label class="label">Пароль</label>
+                        <input class="input input_m" type="password">
+                    </div>
+                    <input class="btn btn_reg" type="submit" value="Зарегестрироваться">
+                </form>
+            </div>
+        </div>
+        <div class="popup__footer">
+        </div>
+    </div>
+    <!-- END Enter popup  -->
+</body>
+</html>
