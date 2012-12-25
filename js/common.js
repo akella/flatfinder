@@ -174,5 +174,75 @@ $(document).ready(function(){
         $( "#filt_type2" ).html( "<span>от</span> " + $( "#slider-type2" ).slider( "values", 0 ) +
             " <span>до</span> " + $( "#slider-type2" ).slider( "values", 1 ));
     });
+    // filter square
+    $(function() {
+        $( "#slider-square" ).slider({
+            range: true,
+            min: 25,
+            max: 100,
+            values: [ 25, 75 ],
+            slide: function( event, ui ) {
+                $( "#filt_square" ).html( "<span>от</span> " + ui.values[ 0 ] + " <span>до</span> " + ui.values[ 1 ] + " м2");
+            }
+        });
+        $( "#filt_square" ).html( "<span>от</span> " + $( "#slider-square" ).slider( "values", 0 ) +
+            " <span>до</span> " + $( "#slider-square" ).slider( "values", 1 ) + " м2");
+    });
+    // filter square 2
+    $(function() {
+        $( "#slider-square2" ).slider({
+            range: true,
+            min: 25,
+            max: 100,
+            values: [ 25, 75 ],
+            slide: function( event, ui ) {
+                $( "#filt_square2" ).html( "<span>от</span> " + ui.values[ 0 ] + " <span>до</span> " + ui.values[ 1 ] + " м2");
+            }
+        });
+        $( "#filt_square2" ).html( "<span>от</span> " + $( "#slider-square2" ).slider( "values", 0 ) +
+            " <span>до</span> " + $( "#slider-square2" ).slider( "values", 1 ) + " м2");
+    });
+    // filter citchen square
+    $(function() {
+        $( "#slider-citch" ).slider({
+            range: true,
+            min: 25,
+            max: 100,
+            values: [ 25, 75 ],
+            slide: function( event, ui ) {
+                $( "#filt_citch" ).html( "<span>от</span> " + ui.values[ 0 ] + " <span>до</span> " + ui.values[ 1 ] +" м2");
+            }
+        });
+        $( "#filt_citch" ).html( "<span>от</span> " + $( "#slider-citch" ).slider( "values", 0 ) +
+            " <span>до</span> " + $( "#slider-citch" ).slider( "values", 1 ) + " м2");
+    });
+    // filter floor
+    $(function() {
+        $( "#slider-floor" ).slider({
+            range: true,
+            min: 1,
+            max: 12,
+            values: [ 1, 5 ],
+            slide: function( event, ui ) {
+                $( "#filt_floor" ).html( "<span>от</span> " + ui.values[ 0 ] + " <span>до</span> " + ui.values[ 1 ]);
+            }
+        });
+        $( "#filt_floor" ).html( "<span>от</span> " + $( "#slider-floor" ).slider( "values", 0 ) +
+            " <span>до</span> " + $( "#slider-floor" ).slider( "values", 1 ));
+    });
+    // filter floor
+    $(function() {
+        $( "#slider-floor2" ).slider({
+            range: true,
+            min: 1,
+            max: 12,
+            values: [ 1, 5 ],
+            slide: function( event, ui ) {
+                $( "#filt_floor2" ).html( "<span>от</span> " + ui.values[ 0 ] + " <span>до</span> " + ui.values[ 1 ]);
+            }
+        });
+        $( "#filt_floor2" ).html( "<span>от</span> " + $( "#slider-floor2" ).slider( "values", 0 ) +
+            " <span>до</span> " + $( "#slider-floor2" ).slider( "values", 1 ));
+    });
 
 });

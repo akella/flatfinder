@@ -1421,6 +1421,10 @@ a {
     color: #f20b0b;
     font-size: 12px; }
 
+.checkbox_big {
+  font-size: 18px;
+  padding-left: 25px; }
+
 .download {
   position: relative;
   padding: 33px 48px;
@@ -2667,7 +2671,8 @@ a {
     width: 130px; }
 
 .downl-photos {
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 38px; }
   .downl-photos div {
     float: left;
     margin-right: 23px;
@@ -2908,6 +2913,20 @@ a {
   font-size: 18px;
   cursor: pointer;
   border-bottom: 1px dotted; }
+.add-advert .wrapper_wc {
+  margin-bottom: 15px; }
+  .add-advert .wrapper_wc label, .add-advert .wrapper_wc .select {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    margin-right: 20px; }
+  .add-advert .wrapper_wc label {
+    color: #999; }
+  .add-advert .wrapper_wc .select {
+    width: 123px; }
+
+.add-advert-wrap {
+  width: 770px; }
 
 .wrapper_dist {
   margin-bottom: 40px; }
@@ -2933,6 +2952,37 @@ a {
     color: #0048cc;
     text-decoration: none;
     border-bottom: 1px solid; }
+
+.filter-flat {
+  padding: 10px;
+  margin-bottom: 20px; }
+  .filter-flat .filter-item {
+    float: left;
+    width: 200px;
+    margin-right: 25px; }
+    .filter-flat .filter-item .filter-slider {
+      margin-bottom: 10px; }
+    .filter-flat .filter-item strong {
+      display: block;
+      margin: 0 0 10px 10px;
+      color: #d59d33;
+      font-size: 16px; }
+
+.checkbox-list {
+  float: left;
+  margin: 15px 25px 0 0; }
+
+.checkbox-row {
+  margin: 30px 0 20px; }
+  .checkbox-row .checkbox {
+    float: left;
+    width: 150px;
+    margin-right: 15px;
+    color: #405559;
+    font-size: 16px; }
+
+.add-advert-photo {
+  width: 770px; }
 
 .lteie8 .btn-download input {
   filter: Alpha(opacity=0); }

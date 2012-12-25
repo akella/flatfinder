@@ -841,6 +841,7 @@
 }
 .downl-photos {
     overflow: hidden;
+    margin-bottom: 38px;
     div {
         float: left;
         margin-right: 23px;
@@ -1136,6 +1137,24 @@
         cursor: pointer;
         border-bottom: 1px dotted;
     }
+    .wrapper_wc {
+        margin-bottom: 15px;
+        label, .select  {
+            display: inline-block;
+            float: none;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+        label {
+            color: #999;
+        }
+        .select {
+            width: 123px;
+        }
+    }
+}
+.add-advert-wrap {
+    width: 770px;
 }
 .wrapper_dist {
     margin-bottom: 40px;
@@ -1167,4 +1186,39 @@
         text-decoration: none;
         border-bottom: 1px solid;
     }
+}
+.filter-flat {
+    padding: 10px;
+    margin-bottom: 20px;
+    .filter-item {
+        float: left;
+        width: 200px;
+        margin-right: 25px;
+        .filter-slider {
+            margin-bottom: 10px;
+        }
+        strong {
+            display: block;
+            margin: 0 0 10px 10px;
+            color: #d59d33;
+            font-size: 16px;
+        }
+    }
+}
+.checkbox-list {
+    float: left;
+    margin: 15px 25px 0 0;
+}
+.checkbox-row {
+    margin: 30px 0 20px;
+    .checkbox {
+        float: left;
+        width: 150px;
+        margin-right: 15px;
+        color: #405559;
+        font-size: 16px;
+    }
+}
+.add-advert-photo {
+    width: 770px;
 }
