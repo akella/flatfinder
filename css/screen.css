@@ -2890,24 +2890,49 @@ a {
   float: left;
   margin: 0 70px 40px 82px; }
 
-.l-cols_profile p {
+.add-advert p {
   margin-bottom: 15px; }
-
-.district {
+.add-advert .filter_price strong {
+  padding-left: 20px; }
+.add-advert .district {
   float: left;
   margin: 0 20px 30px 82px;
   width: 445px;
   font-size: 18px; }
-
-.metro-stations {
+.add-advert .metro-stations {
   float: left; }
-  .metro-stations .metro-st {
+  .add-advert .metro-stations .metro-st {
     font-weight: normal; }
-
-.add {
+.add-advert .add {
   color: #5691d8;
   font-size: 18px;
+  cursor: pointer;
   border-bottom: 1px dotted; }
+
+.wrapper_dist {
+  margin-bottom: 40px; }
+  .wrapper_dist label, .wrapper_dist .select, .wrapper_dist .filter-slider {
+    float: left;
+    margin-right: 20px; }
+  .wrapper_dist label {
+    width: 60px;
+    color: #999; }
+  .wrapper_dist .select {
+    width: 80px; }
+  .wrapper_dist .filter-slider {
+    margin-top: 5px;
+    width: 190px; }
+
+.confid {
+  width: 730px;
+  font-size: 18px;
+  line-height: 24px; }
+  .confid p {
+    margin-bottom: 25px; }
+  .confid a {
+    color: #0048cc;
+    text-decoration: none;
+    border-bottom: 1px solid; }
 
 .lteie8 .btn-download input {
   filter: Alpha(opacity=0); }
