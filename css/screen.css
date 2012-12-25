@@ -1249,6 +1249,8 @@ a {
   width: 62px;
   word-wrap: break-word;
   line-height: 25px; }
+.field_static .input-s {
+  padding-left: 34px; }
 
 .field_counter {
   position: relative; }
@@ -2983,6 +2985,33 @@ a {
 
 .add-advert-photo {
   width: 770px; }
+
+.wrapper_price-type {
+  margin: 37px 0 45px 82px; }
+  .wrapper_price-type .tab, .wrapper_price-type .input-s, .wrapper_price-type .checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px; }
+  .wrapper_price-type .checkbox {
+    margin-top: 7px; }
+  .wrapper_price-type .tab-cont {
+    display: inline-block;
+    padding-top: 0; }
+
+.wrapper_metro-st {
+  margin: 0 0 20px 82px; }
+
+.wrapper-metro-dist {
+  margin-bottom: 40px; }
+  .wrapper-metro-dist .input-s, .wrapper-metro-dist label, .wrapper-metro-dist .select {
+    display: inline-block;
+    vertical-align: middle;
+    float: left; }
+  .wrapper-metro-dist label {
+    margin: 5px 20px 0 0;
+    color: #999; }
+  .wrapper-metro-dist .select {
+    width: 80px; }
 
 .lteie8 .btn-download input {
   filter: Alpha(opacity=0); }

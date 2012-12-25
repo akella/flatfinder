@@ -1222,3 +1222,36 @@
 .add-advert-photo {
     width: 770px;
 }
+.wrapper_price-type {
+    margin: 37px 0 45px 82px;
+    .tab, .input-s, .checkbox {
+       display: inline-block;
+       vertical-align: middle;
+       margin-right: 20px;
+    }
+    .checkbox {
+        margin-top: 7px;
+    }
+    .tab-cont  {
+        display: inline-block;
+        padding-top: 0;
+    }
+}
+.wrapper_metro-st {
+    margin: 0 0 20px 82px;
+}
+.wrapper-metro-dist {
+    margin-bottom: 40px;
+    .input-s, label, .select {
+        display: inline-block;
+        vertical-align: middle;
+        float: left;
+    }
+    label {
+        margin: 5px 20px 0 0;
+        color: #999;
+    }
+    .select {
+        width: 80px;
+    }
+} 
